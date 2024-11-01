@@ -1,9 +1,14 @@
+import ContactBanner from "../../Components/ContactCom/ContactBanner";
+
+
 
 
 const Contact = () => {
   return (
     <div>
-      <h1>this is contact page</h1>
+      {/* CommonBanner start */}
+      <ContactBanner></ContactBanner>
+      {/* CommonBanner end */}
     </div>
   );
 };
