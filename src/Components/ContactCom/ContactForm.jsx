@@ -50,15 +50,15 @@ const ContactForm = () => {
                 <p className="text-xs sm:text-[13px] md:text-sm lg:text-base xl:text-sm w-full lg:w-[90%] mt-3 text-gray-500">Can you share us your name, your email address, your phone number, your address, and what type topic you want to talk us please feel free contact us.</p>
               </div>
               <div className="sm:flex sm:items-center sm:justify-between gap-2 sm:gap-2 lg:gap-3 xl:gap-5 mt-5">
-                <input className="w-full h-full p-2 xl:p-3 border-[1px] border-gray-300 rounded-md text-xs sm:text-xs md:text-sm lg:text-base" type="email" placeholder="Enter your name"></input>
-                <input className="w-full h-full p-2 xl:p-3 border-[1px] border-gray-300 rounded-md text-xs sm:text-xs md:text-sm lg:text-base mt-3 sm:mt-0" type="email" placeholder="Enter your name"></input>
+                <input className="w-full h-full p-2 xl:p-3 border-[1px] border-gray-300 rounded-md text-xs sm:text-xs md:text-sm lg:text-base" type="text" placeholder="Enter your name"></input>
+                <input className="w-full h-full p-2 xl:p-3 border-[1px] border-gray-300 rounded-md text-xs sm:text-xs md:text-sm lg:text-base mt-3 sm:mt-0" type="email" placeholder="Enter your email"></input>
               </div>
               <div className="sm:flex sm:items-center sm:justify-between gap-2 sm:gap-2 lg:gap-3 xl:gap-5">
-                <input className="w-full h-full p-2 xl:p-3 border-[1px] border-gray-300 rounded-md text-xs sm:text-xs md:text-sm lg:text-base" type="email" placeholder="Enter your name"></input>
-                <input className="w-full h-full p-2 xl:p-3 border-[1px] border-gray-300 rounded-md text-xs sm:text-xs md:text-sm lg:text-base mt-3 sm:mt-0" type="email" placeholder="Enter your name"></input>
+                <input className="w-full h-full p-2 xl:p-3 border-[1px] border-gray-300 rounded-md text-xs sm:text-xs md:text-sm lg:text-base" type="text" placeholder="Enter your address"></input>
+                <input className="w-full h-full p-2 xl:p-3 border-[1px] border-gray-300 rounded-md text-xs sm:text-xs md:text-sm lg:text-base mt-3 sm:mt-0" type="text" placeholder="Enter your number"></input>
               </div>
               <div className="">
-                <textarea className="w-full h-24 xl:h-32 p-3 border-[1px] border-gray-300 rounded-md text-xs sm:text-xs md:text-sm lg:text-base" type="email" placeholder="Enter your name"></textarea>
+                <textarea className="w-full h-24 xl:h-32 p-3 border-[1px] border-gray-300 rounded-md text-xs sm:text-xs md:text-sm lg:text-base" type="text" placeholder="Enter your details"></textarea>
               </div>
               <div className="">
                 <button type="submit" className="bg-red-600 text-white p-2 text-[10px] sm:text-[11px] md:text-[11px] lg:text-sm xl:text-sm rounded-sm font-bold">Send Message</button>
