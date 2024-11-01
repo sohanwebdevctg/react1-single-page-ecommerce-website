@@ -1,4 +1,5 @@
 import AboutBanner from "../../Components/AboutCom/AboutBanner";
+import Count from "../../Components/AboutCom/Count";
 import GrowUp from "../../Components/AboutCom/GrowUp";
 
 
@@ -11,6 +12,9 @@ const About = () => {
       {/* growUp start */}
       <GrowUp></GrowUp>
       {/* growUp end */}
+      {/* count start */}
+      <Count></Count>
+      {/* count end */}
     </div>
   );
 };
