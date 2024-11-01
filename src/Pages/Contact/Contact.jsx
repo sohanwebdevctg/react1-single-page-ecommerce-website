@@ -1,4 +1,5 @@
 import ContactBanner from "../../Components/ContactCom/ContactBanner";
+import Location from "../../Components/ContactCom/Location";
 
 
 
@@ -9,6 +10,9 @@ const Contact = () => {
       {/* contactBanner start */}
       <ContactBanner></ContactBanner>
       {/* contactBanner end */}
+      {/* location start */}
+      <Location></Location>
+      {/* location end */}
     </div>
   );
 };
