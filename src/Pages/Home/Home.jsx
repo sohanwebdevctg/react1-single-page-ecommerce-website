@@ -1,3 +1,4 @@
+import Gallery from "../../Components/HomeCom/Gallery";
 import Support from "../../Components/HomeCom/Support";
 
 
@@ -7,6 +8,9 @@ const Home = () => {
       {/* support start */}
       <Support></Support>
       {/* support end */}
+      {/* gallery start */}
+      <Gallery></Gallery>
+      {/* gallery end */}
     </div>
   );
 };
