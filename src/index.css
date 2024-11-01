@@ -6,6 +6,31 @@
 
 
 
+/* about start */
+
+#aboutBanner {
+  background-image: url('../public/about/aboutBanner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+#aboutBanner::after{
+  content: '';
+  position: absolute;
+  background-color: black;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* about end */
+
 /* contact start */
 
 #contactBanner {

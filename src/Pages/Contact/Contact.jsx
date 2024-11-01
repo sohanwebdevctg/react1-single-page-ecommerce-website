@@ -6,9 +6,9 @@ import ContactBanner from "../../Components/ContactCom/ContactBanner";
 const Contact = () => {
   return (
     <div>
-      {/* CommonBanner start */}
+      {/* contactBanner start */}
       <ContactBanner></ContactBanner>
-      {/* CommonBanner end */}
+      {/* contactBanner end */}
     </div>
   );
 };

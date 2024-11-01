@@ -1,9 +1,12 @@
+import AboutBanner from "../../Components/AboutCom/AboutBanner";
 
 
 const About = () => {
   return (
     <div>
-      <h1>this is about page</h1>
+      {/* aboutBanner start */}
+      <AboutBanner></AboutBanner>
+      {/* aboutBanner end */}
     </div>
   );
 };
