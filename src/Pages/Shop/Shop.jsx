@@ -1,9 +1,12 @@
+import ShopBanner from "../../Components/ShopCom/ShopBanner";
 
 
 const Shop = () => {
   return (
     <div>
-      <h1>this is shop page</h1>
+      {/* shopBanner start */}
+      <ShopBanner></ShopBanner>
+      {/* shopBanner end */}
     </div>
   );
 };

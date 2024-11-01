@@ -6,6 +6,31 @@
 
 
 
+/* shop start */
+
+#shopBanner {
+  background-image: url('../public/shop/shopBanner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+#shopBanner::after{
+  content: '';
+  position: absolute;
+  background-color: black;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* shop end */
+
 /* blog start */
 
 #blogBanner {
