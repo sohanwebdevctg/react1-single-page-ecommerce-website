@@ -14,7 +14,7 @@ const Gallery = () => {
         {/* title section end */}
         {/* item start */}
           {/* top section start */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-3 mg:gap-4 lg:gap-6 xl:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-3 mg:gap-4 lg:gap-5 xl:gap-6">
               <div className='w-full relative'>
                 {/* img start */}
                 <img src={img1} className='w-full h-48 md:h-52 lg:h-64 xl:h-72 2xl:h-80'></img>
@@ -48,6 +48,53 @@ const Gallery = () => {
             </div>
           {/* top section end */}
           {/* bottom section start */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-3 mg:gap-4 lg:gap-5 xl:gap-6 mt-5">
+            {/* item start */}
+              <div className='w-full relative'>
+                {/* img start */}
+                <img src={img1} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
+                {/* img end */}
+                {/* details start */}
+                <div className='bg-black bg-opacity-60 absolute top-0 right-0 left-0 bottom-0 flex items-end pl-5 pb-5'>
+                  <ul className='space-y-1'>
+                    <li className='text-gray-200 text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl 2xl:text-2xl font-bold uppercase'>seasonal sale</li>
+                    <li className='text-red-600 text-[11px] sm:text-[10px] md:text-[11px] lg:text-xs xl:text-base 2xl:text-base'>Winter Collection-50% OFF</li>
+                  </ul>
+                </div>
+                {/* details end */}
+              </div>
+              {/* item end */}
+            {/* item start */}
+              <div className='w-full relative'>
+                {/* img start */}
+                <img src={img1} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
+                {/* img end */}
+                {/* details start */}
+                <div className='bg-black bg-opacity-60 absolute top-0 right-0 left-0 bottom-0 flex items-end pl-5 pb-5'>
+                  <ul className='space-y-1'>
+                    <li className='text-gray-200 text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl 2xl:text-2xl font-bold uppercase'>new collection</li>
+                    <li className='text-red-600 text-[11px] sm:text-[10px] md:text-[11px] lg:text-xs xl:text-base 2xl:text-base'>Spring/Summer-50% OFF</li>
+                  </ul>
+                </div>
+                {/* details end */}
+              </div>
+              {/* item end */}
+            {/* item start */}
+              <div className='w-full relative'>
+                {/* img start */}
+                <img src={img1} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
+                {/* img end */}
+                {/* details start */}
+                <div className='bg-black bg-opacity-60 absolute top-0 right-0 left-0 bottom-0 flex items-end pl-5 pb-5'>
+                  <ul className='space-y-1'>
+                    <li className='text-gray-200 text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl 2xl:text-2xl font-bold uppercase'>t-shirts</li>
+                    <li className='text-red-600 text-[11px] sm:text-[10px] md:text-[11px] lg:text-xs xl:text-base 2xl:text-base'>New Trends-50% OFF</li>
+                  </ul>
+                </div>
+                {/* details end */}
+              </div>
+              {/* item end */}
+            </div>
           {/* bottom section end */}
         {/* item end */}
         </div>
