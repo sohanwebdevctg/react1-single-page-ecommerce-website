@@ -1,9 +1,12 @@
+import Support from "../../Components/HomeCom/Support";
 
 
 const Home = () => {
   return (
     <div>
-      <h1>this is home page</h1>
+      {/* support start */}
+      <Support></Support>
+      {/* support end */}
     </div>
   );
 };
