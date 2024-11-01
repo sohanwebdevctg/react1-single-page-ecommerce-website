@@ -4,7 +4,7 @@ const AboutBanner = () => {
   return (
     <>
       <div className="flex justify-center items-center h-96" id="aboutBanner">
-        {/* content section start */}
+        {/* about section start */}
         <ul className="text-center space-y-2 px-4">
           <li>
             <h4 className="text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-red-600">
@@ -22,7 +22,7 @@ const AboutBanner = () => {
             </button>
           </li>
         </ul>
-        {/* content section end */}
+        {/* about section end */}
       </div>
     </>
   );

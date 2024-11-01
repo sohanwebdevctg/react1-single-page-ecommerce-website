@@ -1,9 +1,12 @@
+import BlogBanner from "../../Components/BlogCom/BlogBanner";
 
 
 const Blog = () => {
   return (
     <div>
-      <h1>this is blog page</h1>
+      {/* blogBanner start */}
+      <BlogBanner></BlogBanner>
+      {/* blogBanner end */}
     </div>
   );
 };
