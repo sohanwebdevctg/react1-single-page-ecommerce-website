@@ -1,5 +1,6 @@
 import BlogBanner from "../../Components/BlogCom/BlogBanner";
 import BlogGallery from "../../Components/BlogCom/BlogGallery";
+import BlogPost from "../../Components/BlogCom/BlogPost";
 
 
 const Blog = () => {
@@ -11,6 +12,9 @@ const Blog = () => {
       {/* blogGallery start */}
       <BlogGallery></BlogGallery>
       {/* blogGallery end */}
+      {/* blogPost start */}
+      <BlogPost></BlogPost>
+      {/* blogPost end */}
     </div>
   );
 };
