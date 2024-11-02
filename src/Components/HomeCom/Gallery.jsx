@@ -1,8 +1,8 @@
-import img1 from '../../../public/home/img1.jpg';
-import img2 from '../../../public/home/img2.jpg';
-import img3 from '../../../public/home/img3.jpg';
-import img4 from '../../../public/home/img4.jpg';
-import img5 from '../../../public/home/img5.jpg';
+import img1 from '/public/home/img1.jpg';
+import img2 from '/public/home/img2.jpg';
+import img3 from '/public/home/img3.jpeg';
+import img4 from '/public/home/img4.jpg';
+import img5 from '/public/home/img5.png';
 
 const Gallery = () => {
   return (
@@ -60,8 +60,8 @@ const Gallery = () => {
                 {/* details start */}
                 <div className='bg-black bg-opacity-60 absolute top-0 right-0 left-0 bottom-0 flex items-end pl-5 pb-5'>
                   <ul className='space-y-1'>
-                    <li className='text-gray-200 text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl 2xl:text-2xl font-bold uppercase'>seasonal sale</li>
-                    <li className='text-red-600 text-[11px] sm:text-[10px] md:text-[11px] lg:text-xs xl:text-base 2xl:text-base'>Winter Collection-50% OFF</li>
+                    <li className='text-gray-200 text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl 2xl:text-2xl font-bold uppercase'>Cosmetics</li>
+                    <li className='text-red-600 text-[11px] sm:text-[10px] md:text-[11px] lg:text-xs xl:text-base 2xl:text-base'>Collection-50% OFF</li>
                   </ul>
                 </div>
                 {/* details end */}
@@ -75,8 +75,8 @@ const Gallery = () => {
                 {/* details start */}
                 <div className='bg-black bg-opacity-60 absolute top-0 right-0 left-0 bottom-0 flex items-end pl-5 pb-5'>
                   <ul className='space-y-1'>
-                    <li className='text-gray-200 text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl 2xl:text-2xl font-bold uppercase'>new collection</li>
-                    <li className='text-red-600 text-[11px] sm:text-[10px] md:text-[11px] lg:text-xs xl:text-base 2xl:text-base'>Spring/Summer-50% OFF</li>
+                    <li className='text-gray-200 text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl 2xl:text-2xl font-bold uppercase'>jewelry</li>
+                    <li className='text-red-600 text-[11px] sm:text-[10px] md:text-[11px] lg:text-xs xl:text-base 2xl:text-base'>Collection-50% OFF</li>
                   </ul>
                 </div>
                 {/* details end */}
@@ -90,8 +90,8 @@ const Gallery = () => {
                 {/* details start */}
                 <div className='bg-black bg-opacity-60 absolute top-0 right-0 left-0 bottom-0 flex items-end pl-5 pb-5'>
                   <ul className='space-y-1'>
-                    <li className='text-gray-200 text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl 2xl:text-2xl font-bold uppercase'>t-shirts</li>
-                    <li className='text-red-600 text-[11px] sm:text-[10px] md:text-[11px] lg:text-xs xl:text-base 2xl:text-base'>New Trends-50% OFF</li>
+                    <li className='text-gray-200 text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl 2xl:text-2xl font-bold uppercase'>Watch</li>
+                    <li className='text-red-600 text-[11px] sm:text-[10px] md:text-[11px] lg:text-xs xl:text-base 2xl:text-base'>Collection-50% OFF</li>
                   </ul>
                 </div>
                 {/* details end */}

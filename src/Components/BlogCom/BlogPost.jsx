@@ -1,7 +1,7 @@
-import couple from '../../../public/blog/couple.jpg'
-import bestCollection from '../../../public/blog/bestCollection.jpg'
-import men from '../../../public/blog/men.jpg'
-import wemen from '../../../public/blog/wemen.jpg'
+import couple from '/public/blog/couple.jpg'
+import bestCollection from '/public/blog/bestCollection.jpg'
+import men from '/public/blog/men.jpg'
+import wemen from '/public/blog/wemen.jpg'
 
 import { FaLinkedin, FaLocationPin, FaSquareFacebook, FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
 

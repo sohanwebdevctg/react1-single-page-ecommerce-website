@@ -1,6 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
-import fashion1 from '../../../public/about/fashion1.jpg';
-import fashion from '../../../public/about/fashion.jpeg';
+import fashion1 from '/public/about/fashion1.jpg';
+import fashion from '/public/about/fashion.jpeg';
+
 
 const GrowUp = () => {
   return (

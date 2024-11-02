@@ -1,9 +1,9 @@
-import img1 from '../../../public/about/img1.png';
-import img2 from '../../../public/about/img2.png';
-import img3 from '../../../public/about/img3.png';
-import img4 from '../../../public/about/img4.png';
-import img5 from '../../../public/about/img5.png';
-import img6 from '../../../public/about/img6.png';
+import img1 from '/public/about/img1.png';
+import img2 from '/public/about/img2.png';
+import img3 from '/public/about/img3.png';
+import img4 from '/public/about/img4.png';
+import img5 from '/public/about/img5.png';
+import img6 from '/public/about/img6.png';
 
 const Services = () => {
 
