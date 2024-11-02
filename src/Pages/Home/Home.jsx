@@ -1,3 +1,4 @@
+import Banner from "../../Components/HomeCom/Banner";
 import Gallery from "../../Components/HomeCom/Gallery";
 import Support from "../../Components/HomeCom/Support";
 
@@ -5,6 +6,9 @@ import Support from "../../Components/HomeCom/Support";
 const Home = () => {
   return (
     <div>
+      {/* banner start */}
+      <Banner></Banner>
+      {/* banner end */}
       {/* support start */}
       <Support></Support>
       {/* support end */}

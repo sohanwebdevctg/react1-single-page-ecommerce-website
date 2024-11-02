@@ -1,5 +1,8 @@
 import img1 from '../../../public/home/img1.jpg';
 import img2 from '../../../public/home/img2.jpg';
+import img3 from '../../../public/home/img3.jpg';
+import img4 from '../../../public/home/img4.jpg';
+import img5 from '../../../public/home/img5.jpg';
 
 const Gallery = () => {
   return (
@@ -52,7 +55,7 @@ const Gallery = () => {
             {/* item start */}
               <div className='w-full relative'>
                 {/* img start */}
-                <img src={img1} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
+                <img src={img3} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
                 {/* img end */}
                 {/* details start */}
                 <div className='bg-black bg-opacity-60 absolute top-0 right-0 left-0 bottom-0 flex items-end pl-5 pb-5'>
@@ -67,7 +70,7 @@ const Gallery = () => {
             {/* item start */}
               <div className='w-full relative'>
                 {/* img start */}
-                <img src={img1} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
+                <img src={img4} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
                 {/* img end */}
                 {/* details start */}
                 <div className='bg-black bg-opacity-60 absolute top-0 right-0 left-0 bottom-0 flex items-end pl-5 pb-5'>
@@ -82,7 +85,7 @@ const Gallery = () => {
             {/* item start */}
               <div className='w-full relative'>
                 {/* img start */}
-                <img src={img1} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
+                <img src={img5} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
                 {/* img end */}
                 {/* details start */}
                 <div className='bg-black bg-opacity-60 absolute top-0 right-0 left-0 bottom-0 flex items-end pl-5 pb-5'>
