@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { FaMinusSquare, FaPlusSquare, FaStar } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const SingleProduct = () => {
 
@@ -23,8 +26,42 @@ const SingleProduct = () => {
     })
   },[id]);
 
-  console.log(product)
+  // total quantity
+  let [quantity, setQuantity] = useState(1);
+  let [total, setTotal] = useState(0);
   
+  
+
+  // quantityIncrement
+  const quantityIncrement = (data, totalData) => {
+    setQuantity(quantity = quantity + data);
+    setTotal(quantity * totalData)
+  }
+
+
+  // quantityDecrement
+  const quantityDecrement = (data, totalData) => {
+    if(quantity > 1){
+      setQuantity(quantity = quantity - data);
+      setTotal(quantity * totalData)
+    }else{
+      toast("Your data is too small");
+    }
+  }
+
+  // save Data
+  const saveBtn = (data) => {
+    const saveCart = {
+      id: data.id,
+      details : data.details,
+      image : data.image,
+      quantity : quantity,
+      price : data.price,
+      total : total > data?.price ? total : data?.price
+    }
+    console.log(saveCart)
+    toast("your data has been saved");
+  }
 
   return (
     <>
@@ -99,33 +136,33 @@ const SingleProduct = () => {
                   </p>
                   <div className="flex justify-center items-center gap-2 ">
                     <FaPlusSquare
-                      // onClick={() => quantityIncrement(quantity)}
+                      onClick={() => quantityIncrement(product?.quantity, product?.price)}
                       className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-green-500"
                     />
                     <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-                      30
+                      {quantity}
                     </span>
                     <FaMinusSquare
-                      // onClick={() => quantityDecrement(quantity)}
+                      onClick={() => quantityDecrement(product.quantity, product?.price)}
                       className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-red-500"
                     />
                   </div>
                 </li>
                 {/* total price */}
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-                  Total: $ 10
+                  Total: $ {total > product.price ? total : product?.price}
                 </p>
                 {/* button  */}
                 <li>
                   <button
-                    // onClick={addData}
-                    className="bg-green-600 text-white btn btn-xs sm:btn-xs md:btn-sm lg:btn-sm xl:btn-md hover:bg-green-600"
+                    onClick={() => saveBtn(product)}
+                    className="bg-green-600 text-white btn btn-xs sm:btn-xs md:btn-sm lg:btn-sm xl:btn-md hover:bg-green-600 px-3 py-2"
                   >
                     Add to Cart
                   </button>
                   <button
                     // onClick={previousPage}
-                    className="bg-red-600 text-white btn btn-xs sm:btn-xs md:btn-sm lg:btn-sm xl:btn-md hover:bg-red-600 ml-2"
+                    className="bg-red-600 text-white btn btn-xs sm:btn-xs md:btn-sm lg:btn-sm xl:btn-md hover:bg-red-600 ml-2 px-3 py-2"
                   >
                     Back
                   </button>
@@ -138,6 +175,9 @@ const SingleProduct = () => {
         </div>
         {/* content section end */}
       </div>
+      {/* react toast start */}
+      <ToastContainer />
+      {/* react toast end */}
     </>
   );
 };
