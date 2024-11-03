@@ -24,7 +24,7 @@ const Cart = ({item}) => {
                   <h2 className="text-[10px] sm:text-[11px] md:text-[11px] lg:text-xs xl:tex-sm 2xl:text-base font-bold italic">{item?.title}</h2>
                   <p className="text-[10px] sm:text-[11px] md:text-[11px] lg:text-xs xl:text-sm 2xl:text-base font-bold">$ 40</p>
                 </li>
-                <li><p className="text-[11px] sm:text-[11px] md:text-[10px] lg:text-[10px] xl:text-xs 2xl:text-sm text-gray-500">{item?.details.slice(0,100)}...</p></li>
+                <li><p className="text-[11px] sm:text-[11px] md:text-[10px] lg:text-[10px] xl:text-xs 2xl:text-sm text-gray-500">{item?.details.slice(0,60)}...</p></li>
                 <li className="flex justify-between items-center">
                   <span className="flex items-center">
                     <FaStar className="text-yellow-500 text-[10px] sm:text-[11px] md:text-[9px] lg:text-[10px] xl:text-xs 2xl:text-sm"></FaStar>

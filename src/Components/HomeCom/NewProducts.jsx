@@ -4,7 +4,7 @@ import Cart from "./Cart";
 
 const NewProducts = () => {
 
-  //const data
+  //set data
   const [datas, setDatas] = useState([]);
 
   //load data
