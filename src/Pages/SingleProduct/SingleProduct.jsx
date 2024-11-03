@@ -29,15 +29,12 @@ const SingleProduct = () => {
   // total quantity
   let [quantity, setQuantity] = useState(1);
   let [total, setTotal] = useState(0);
-  
-  
 
   // quantityIncrement
   const quantityIncrement = (data, totalData) => {
     setQuantity(quantity = quantity + data);
     setTotal(quantity * totalData)
   }
-
 
   // quantityDecrement
   const quantityDecrement = (data, totalData) => {
@@ -49,8 +46,12 @@ const SingleProduct = () => {
     }
   }
 
+  //all data
+  const [allData, setAllData] = useState([])
+
   // save Data
   const saveBtn = (data) => {
+    // get data
     const saveCart = {
       id: data.id,
       details : data.details,
@@ -59,8 +60,21 @@ const SingleProduct = () => {
       price : data.price,
       total : total > data?.price ? total : data?.price
     }
-    console.log(saveCart)
-    toast("your data has been saved");
+
+    // ehecking id
+    let setData = allData.find(item => item.id === data.id);
+
+    // set localStorage data
+    if(setData){
+
+      toast("sorry");
+
+    }else{
+
+      setAllData([...allData, saveCart]);
+      toast("success");
+      
+    }
   }
 
   return (
@@ -74,7 +88,7 @@ const SingleProduct = () => {
             <div className="w-full sm:w-[50%] p-3 sm:p-2 xl:p-10 bg-white">
               {/* selected image section start */}
               <div className="overflow-hidden">
-                <img src={product?.image}
+                <img src={product?.image && product?.image[0]}
                   alt="this is selected image"
                   className="w-full h-40 sm:w-full sm:h-44 md:w-72 md:h-48 lg:w-80 lg:h-52 xl:w-96 xl:h-60 mx-auto"
                 ></img>

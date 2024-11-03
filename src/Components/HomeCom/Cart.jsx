@@ -12,7 +12,7 @@ const Cart = ({item}) => {
             <div>
             {/* image section start */}
             <div className="bg-white">
-              <img src={item.image} className='w-full h-28 sm:h-28 md:h-28 lg:h-36 xl:h-48 2xl:h-52'></img>
+              <img src={item.image[0]} className='w-full h-28 sm:h-28 md:h-28 lg:h-36 xl:h-48 2xl:h-52'></img>
             </div>
             {/* image section end */}
             {/* description section start */}
