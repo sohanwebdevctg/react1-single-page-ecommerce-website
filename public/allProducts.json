@@ -5,7 +5,7 @@
     "brandName": "BrandA",
     "title": "Product 1",
     "details": "Details of Product 1",
-    "star": "4.5",
+    "rating": "4.5",
     "price": 29,
     "productCategory": "new",
     "quantity": 1
@@ -16,7 +16,7 @@
     "brandName": "BrandB",
     "title": "Product 2",
     "details": "Details of Product 2",
-    "star": "4.0",
+    "rating": "4.0",
     "price": 19,
     "productCategory": "new",
     "quantity": 1
@@ -27,7 +27,7 @@
     "brandName": "BrandC",
     "title": "Product 3",
     "details": "Details of Product 3",
-    "star": "4.8",
+    "rating": "4.8",
     "price": 39,
     "productCategory": "new",
     "quantity": 1
@@ -38,7 +38,7 @@
     "brandName": "BrandD",
     "title": "Product 4",
     "details": "Details of Product 4",
-    "star": "4.2",
+    "rating": "4.2",
     "price": 24,
     "productCategory": "new",
     "quantity": 1
@@ -49,7 +49,7 @@
     "brandName": "BrandE",
     "title": "Product 5",
     "details": "Details of Product 5",
-    "star": "5.0",
+    "rating": "5.0",
     "price": 49,
     "productCategory": "new",
     "quantity": 1
@@ -60,7 +60,7 @@
     "brandName": "BrandF",
     "title": "Product 6",
     "details": "Details of Product 6",
-    "star": "3.8",
+    "rating": "3.8",
     "price": 15,
     "productCategory": "new",
     "quantity": 1
@@ -71,7 +71,7 @@
     "brandName": "BrandG",
     "title": "Product 7",
     "details": "Details of Product 7",
-    "star": "4.7",
+    "rating": "4.7",
     "price": 34,
     "productCategory": "new",
     "quantity": 1
@@ -82,7 +82,7 @@
     "brandName": "BrandH",
     "title": "Product 8",
     "details": "Details of Product 8",
-    "star": "4.1",
+    "rating": "4.1",
     "price": 22,
     "productCategory": "new",
     "quantity": 1
@@ -93,7 +93,7 @@
     "brandName": "BrandI",
     "title": "Product 9",
     "details": "Details of Product 9",
-    "star": "4.9",
+    "rating": "4.9",
     "price": 45,
     "productCategory": "new",
     "quantity": 1
@@ -104,7 +104,7 @@
     "brandName": "BrandJ",
     "title": "Product 10",
     "details": "Details of Product 10",
-    "star": "3.9",
+    "rating": "3.9",
     "price": 17,
     "productCategory": "new",
     "quantity": 1
@@ -115,7 +115,7 @@
     "brandName": "BrandK",
     "title": "Product 11",
     "details": "Details of Product 11",
-    "star": "4.3",
+    "rating": "4.3",
     "price": 27,
     "productCategory": "new",
     "quantity": 1
@@ -126,7 +126,7 @@
     "brandName": "BrandL",
     "title": "Product 12",
     "details": "Details of Product 12",
-    "star": "4.6",
+    "rating": "4.6",
     "price": 33,
     "productCategory": "new",
     "quantity": 1
@@ -137,7 +137,7 @@
     "brandName": "BrandM",
     "title": "Product 13",
     "details": "Details of Product 13",
-    "star": "4.0",
+    "rating": "4.0",
     "price": 19,
     "productCategory": "new",
     "quantity": 1
@@ -148,7 +148,7 @@
     "brandName": "BrandN",
     "title": "Product 14",
     "details": "Details of Product 14",
-    "star": "4.5",
+    "rating": "4.5",
     "price": 31,
     "productCategory": "new",
     "quantity": 1
@@ -159,7 +159,7 @@
     "brandName": "BrandO",
     "title": "Product 15",
     "details": "Details of Product 15",
-    "star": "3.7",
+    "rating": "3.7",
     "price": 14,
     "productCategory": "new",
     "quantity": 1
@@ -170,7 +170,7 @@
     "brandName": "BrandP",
     "title": "Product 16",
     "details": "Details of Product 16",
-    "star": "4.4",
+    "rating": "4.4",
     "price": 28,
     "productCategory": "new",
     "quantity": 1
@@ -181,7 +181,7 @@
     "brandName": "BrandQ",
     "title": "Product 17",
     "details": "Details of Product 17",
-    "star": "4.9",
+    "rating": "4.9",
     "price": 46,
     "productCategory": "new",
     "quantity": 1
@@ -192,7 +192,7 @@
     "brandName": "BrandR",
     "title": "Product 18",
     "details": "Details of Product 18",
-    "star": "3.8",
+    "rating": "3.8",
     "price": 16,
     "productCategory": "new",
     "quantity": 1
@@ -204,7 +204,7 @@
     "brandName": "BrandS",
     "title": "Product 19",
     "details": "Details of Product 19",
-    "star": "4.5",
+    "rating": "4.5",
     "price": 29,
     "productCategory": "featured",
     "quantity": 1
@@ -215,7 +215,7 @@
     "brandName": "BrandT",
     "title": "Product 20",
     "details": "Details of Product 20",
-    "star": "4.0",
+    "rating": "4.0",
     "price": 19,
     "productCategory": "featured",
     "quantity": 1
@@ -226,7 +226,7 @@
     "brandName": "BrandU",
     "title": "Product 21",
     "details": "Details of Product 21",
-    "star": "4.8",
+    "rating": "4.8",
     "price": 39,
     "productCategory": "featured",
     "quantity": 1
@@ -237,7 +237,7 @@
     "brandName": "BrandV",
     "title": "Product 22",
     "details": "Details of Product 22",
-    "star": "4.2",
+    "rating": "4.2",
     "price": 24,
     "productCategory": "featured",
     "quantity": 1
@@ -248,7 +248,7 @@
     "brandName": "BrandW",
     "title": "Product 23",
     "details": "Details of Product 23",
-    "star": "5.0",
+    "rating": "5.0",
     "price": 49,
     "productCategory": "featured",
     "quantity": 1
@@ -259,7 +259,7 @@
     "brandName": "BrandX",
     "title": "Product 24",
     "details": "Details of Product 24",
-    "star": "3.8",
+    "rating": "3.8",
     "price": 15,
     "productCategory": "featured",
     "quantity": 1
@@ -270,7 +270,7 @@
     "brandName": "BrandY",
     "title": "Product 25",
     "details": "Details of Product 25",
-    "star": "4.7",
+    "rating": "4.7",
     "price": 34,
     "productCategory": "featured",
     "quantity": 1
@@ -281,7 +281,7 @@
     "brandName": "BrandZ",
     "title": "Product 26",
     "details": "Details of Product 26",
-    "star": "4.1",
+    "rating": "4.1",
     "price": 22,
     "productCategory": "featured",
     "quantity": 1
@@ -292,7 +292,7 @@
     "brandName": "BrandAA",
     "title": "Product 27",
     "details": "Details of Product 27",
-    "star": "4.9",
+    "rating": "4.9",
     "price": 45,
     "productCategory": "featured",
     "quantity": 1
@@ -303,7 +303,7 @@
     "brandName": "BrandAB",
     "title": "Product 28",
     "details": "Details of Product 28",
-    "star": "3.9",
+    "rating": "3.9",
     "price": 17,
     "productCategory": "featured",
     "quantity": 1
@@ -314,7 +314,7 @@
     "brandName": "BrandAC",
     "title": "Product 29",
     "details": "Details of Product 29",
-    "star": "4.3",
+    "rating": "4.3",
     "price": 27,
     "productCategory": "featured",
     "quantity": 1
@@ -325,7 +325,7 @@
     "brandName": "BrandAD",
     "title": "Product 30",
     "details": "Details of Product 30",
-    "star": "4.6",
+    "rating": "4.6",
     "price": 33,
     "productCategory": "featured",
     "quantity": 1
@@ -336,7 +336,7 @@
     "brandName": "BrandAE",
     "title": "Product 31",
     "details": "Details of Product 31",
-    "star": "4.0",
+    "rating": "4.0",
     "price": 19,
     "productCategory": "featured",
     "quantity": 1
@@ -347,7 +347,7 @@
     "brandName": "BrandAF",
     "title": "Product 32",
     "details": "Details of Product 32",
-    "star": "4.5",
+    "rating": "4.5",
     "price": 31,
     "productCategory": "featured",
     "quantity": 1
@@ -358,7 +358,7 @@
     "brandName": "BrandAG",
     "title": "Product 33",
     "details": "Details of Product 33",
-    "star": "3.7",
+    "rating": "3.7",
     "price": 14,
     "productCategory": "featured",
     "quantity": 1
@@ -369,7 +369,7 @@
     "brandName": "BrandAH",
     "title": "Product 34",
     "details": "Details of Product 34",
-    "star": "4.4",
+    "rating": "4.4",
     "price": 28,
     "productCategory": "featured",
     "quantity": 1
@@ -380,7 +380,7 @@
     "brandName": "BrandAI",
     "title": "Product 35",
     "details": "Details of Product 35",
-    "star": "4.9",
+    "rating": "4.9",
     "price": 46,
     "productCategory": "featured",
     "quantity": 1
@@ -391,7 +391,7 @@
     "brandName": "BrandAJ",
     "title": "Product 36",
     "details": "Details of Product 36",
-    "star": "3.8",
+    "rating": "3.8",
     "price": 16,
     "productCategory": "featured",
     "quantity": 1
