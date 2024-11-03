@@ -3,6 +3,7 @@ import Gallery from "../../Components/HomeCom/Gallery";
 import NewProducts from "../../Components/HomeCom/NewProducts";
 import OurBrand from "../../Components/HomeCom/OurBrand";
 import RecentView from "../../Components/HomeCom/RecentView";
+import RepairService from "../../Components/HomeCom/RepairService";
 import Support from "../../Components/HomeCom/Support";
 
 
@@ -21,6 +22,9 @@ const Home = () => {
       {/* newProducts start */}
       <NewProducts></NewProducts>
       {/* newProducts end */}
+      {/* repairService start */}
+      <RepairService></RepairService>
+      {/* repairService end */}
       {/* ourBrand start */}
       <OurBrand></OurBrand>
       {/* ourBrand end */}
