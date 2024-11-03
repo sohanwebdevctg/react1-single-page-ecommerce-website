@@ -6,8 +6,6 @@ import { AiFillPlusCircle } from 'react-icons/ai';
 
 const Cart = ({item}) => {
 
-  console.log(item)
-
   return (
     <div className="px-1 py-3">
             {/* item start */}
