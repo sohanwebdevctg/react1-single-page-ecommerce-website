@@ -16,7 +16,7 @@ const Cart = ({item}) => {
             </div>
             {/* image section end */}
             {/* description section start */}
-            <Link to="/">
+            <Link to={`/single-product/${item.id}`}>
             {/* details section start */}
             <div className=" bg-[#F5F5F5] p-2 rounded-b-2xl shadow-xl">
               <ul className='space-y-1'>
