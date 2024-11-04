@@ -91,6 +91,30 @@
   opacity: 0.6;
 }
 
+.productCon {
+  position: relative;
+}
+
+.subProduct {
+  position: absolute;
+  visibility: hidden;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.productCon:hover .subProduct {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.productCon:not(:hover) .subProduct {
+  visibility: hidden;
+  transform: translateY(100%);
+}
+
 /* shop end */
 
 /* blog start */

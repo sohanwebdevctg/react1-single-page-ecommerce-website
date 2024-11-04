@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Cart from "../HomeCom/Cart";
+import ShopCart from "./ShopCart";
 
 
 const AllProducts = () => {
@@ -26,12 +26,12 @@ const AllProducts = () => {
           {/* title end */}
           {/* cart start */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-5 gap-1 sm:gap-2 md:gap-1 lg:gap-2 xl:gap-3 2xl:gap-4">
-            {
-              datas.map((item, id) => <Cart
-              key={id}
-              item={item}
-              ></Cart>)
-            }
+          {
+          datas.map((data, id) => <ShopCart
+          key={id}
+          data={data}
+          ></ShopCart>)
+        }
           </div>
           {/* cart end */}
         </div>
