@@ -45,9 +45,11 @@ const SingleProduct = () => {
       toast("Your data is too small");
     }
   }
-
+  
   //all data
   const [allData, setAllData] = useState([])
+  const [selectImage, setSelectImage] = useState()
+
 
   // save Data
   const saveBtn = (data) => {
@@ -55,11 +57,14 @@ const SingleProduct = () => {
     const saveCart = {
       id: data.id,
       details : data.details,
-      image : data.image,
+      image : selectImage ? selectImage : (product?.image && product?.image[0]),
       quantity : quantity,
       price : data.price,
       total : total > data?.price ? total : data?.price
     }
+
+    console.log(saveCart)
+
 
     // ehecking id
     let setData = allData.find(item => item.id === data.id);
@@ -88,12 +93,12 @@ const SingleProduct = () => {
             <div className="w-full sm:w-[50%] p-3 sm:p-2 xl:p-10 bg-white">
               {/* selected image section start */}
               <div className="overflow-hidden">
-                <img src={product?.image && product?.image[0]}
+                <img src={selectImage ? selectImage : (product?.image && product?.image[0])}
                   alt="this is selected image"
                   className="w-full h-40 sm:w-full sm:h-44 md:w-72 md:h-48 lg:w-80 lg:h-52 xl:w-96 xl:h-60 mx-auto"
                 ></img>
-                {/* <div className="flex items-center justify-around gap-2 mt-5 overflow-x-auto bg-[#F5F5F5] py-2">
-                  {imageData?.map((data, index) => (
+                <div className="flex items-center justify-around gap-2 mt-5 overflow-x-auto bg-[#F5F5F5] py-2">
+                  {product?.image?.map((data, index) => (
                     <img
                       key={index}
                       src={data}
@@ -104,7 +109,7 @@ const SingleProduct = () => {
                       onClick={() => setSelectImage(data)}
                     ></img>
                   ))}
-                </div> */}
+                </div>
               </div>
               {/* selected image section end */}
               {/* select image section start */}
