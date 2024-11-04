@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Banner from "../../Components/HomeCom/Banner";
 import FeaturedProducts from "../../Components/HomeCom/FeaturedProducts";
 import Gallery from "../../Components/HomeCom/Gallery";
@@ -9,6 +10,7 @@ import Support from "../../Components/HomeCom/Support";
 
 
 const Home = () => {
+
   return (
     <div>
       {/* banner start */}

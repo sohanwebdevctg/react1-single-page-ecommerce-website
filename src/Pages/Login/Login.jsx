@@ -3,6 +3,7 @@ import loginImg from '../../../public/login/login.png';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { setUser } from '../../utilities/localstorage';
 
 const Login = () => {
 
@@ -16,13 +17,14 @@ const Login = () => {
 
     const email = form.email.value;
     const password = form.password.value;
+    const user = true;
 
     if(email === null && password === null){
       toast("Wow so easy!");
     }else{
-      const userValue = {email: email, password : password};
-      localStorage.setItem('userInfo', JSON.stringify(userValue));
+      const userValue = {email: email, password : password, user : user};
       toast("your are logged in now");
+      setUser(userValue)
       form.reset();
       navigate('/');
     }

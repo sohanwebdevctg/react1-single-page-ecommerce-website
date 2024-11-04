@@ -4,11 +4,17 @@ import { FaShoppingCart } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Navbar = () => {
   // toggle button
   const [toggle, setToggle] = useState(false);
+
+  //context
+  const {user} = useContext(AuthContext);
+
+  console.log(user?.email)
 
   return (
     <>
