@@ -7,6 +7,7 @@ import Contact from "../Pages/Contact/Contact";
 import Blog from "../Pages/Blog/Blog";
 import SingleProduct from "../Pages/SingleProduct/SingleProduct";
 import CartTable from "../Pages/CartTable/CartTable";
+import Login from "../Pages/Login/Login";
 
 
 
@@ -42,9 +43,13 @@ const router = createBrowserRouter([
       {
         path: '/blog',
         element: <Blog></Blog>
-      }
+      },
     ]
   },
+  {
+    path: '/login',
+    element: <Login></Login>
+  }
 ]);
 
 

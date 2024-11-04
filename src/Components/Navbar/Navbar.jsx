@@ -112,7 +112,7 @@ const Navbar = () => {
                         ? "md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-red-600"
                         : "md:text-sm lg:text-base xl:text-lg 2xl:text-xl"
                     }
-                    to="/"
+                    to="/login"
                   >
                     <IoMdPerson></IoMdPerson>
                   </NavLink>
@@ -232,7 +232,7 @@ const Navbar = () => {
                         ? "text-lg sm:text-xl text-red-600"
                         : "text-lg sm:text-xl"
                     }
-                    to="/"
+                    to="/login"
                   >
                     <IoMdPerson></IoMdPerson>
                   </NavLink>
