@@ -6,6 +6,7 @@ import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import Blog from "../Pages/Blog/Blog";
 import SingleProduct from "../Pages/SingleProduct/SingleProduct";
+import CartTable from "../Pages/CartTable/CartTable";
 
 
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: '/single-product/:id',
         element: <SingleProduct></SingleProduct>,
+      },
+      {
+        path: '/cart-table',
+        element : <CartTable></CartTable>
       },
       {
         path: '/shop',

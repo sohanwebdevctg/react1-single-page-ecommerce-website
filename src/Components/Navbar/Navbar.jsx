@@ -100,7 +100,7 @@ const Navbar = () => {
                         ? "md:text-xs lg:text-sm xl:text-base 2xl:text-xl text-red-600"
                         : "md:text-xs lg:text-sm xl:text-base 2xl:text-xl"
                     }
-                    to="/"
+                    to="/cart-table"
                   >
                     <FaShoppingCart></FaShoppingCart>
                   </NavLink>
@@ -214,13 +214,13 @@ const Navbar = () => {
                 <li>
                 <ul className="flex items-center gap-5">
                 <li>
-                  <NavLink
+                  <NavLink 
                     className={({ isActive }) =>
                       isActive
                         ? "text-lg sm:text-xl text-red-600"
                         : "text-lg sm:text-xl"
                     }
-                    to="/"
+                    to="/cart-table"
                   >
                     <FaShoppingCart></FaShoppingCart>
                   </NavLink>
