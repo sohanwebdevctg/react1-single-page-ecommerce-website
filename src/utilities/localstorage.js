@@ -33,14 +33,17 @@ const setData = (data) => {
 
   let previousData = getData();
 
-
   // set new data with previous data
   previousData.push(data);
   localStorage.setItem('cartData', JSON.stringify(previousData));
 
 }
 
+const removeData = () => {
+  return localStorage.removeItem('cartData');
+}
+
 /* data add in cart end */
 
 
-export { getUser, setUser, removeUser, getData, setData }
+export { getUser, setUser, removeUser, getData, setData, removeData }

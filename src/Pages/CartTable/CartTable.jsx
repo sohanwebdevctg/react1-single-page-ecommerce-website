@@ -1,14 +1,20 @@
 import { useState } from "react";
-import { getData, getUser } from "../../utilities/localstorage";
+import { getData, getUser, removeData, removeUser } from "../../utilities/localstorage";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const CartTable = () => {
 
   // user data
   const [user, setUser] = useState(() => getUser());
-
   const [data, setData] = useState(() => getData());
 
-  //
+  const navigate = useNavigate();
+
+  //totalPrice
+  const totalPrice = data.reduce((accumulator ,item) => {
+    return accumulator += item.total;
+  }, 0)
 
   // buy data
   const buyData = (event) => {
@@ -22,10 +28,28 @@ const CartTable = () => {
     const email = form.email.value;
     const accountNumber = form.accountNumber.value;
 
+    // checked user
     if(email === user.email && accountNumber !== null && totalItem !== null && totalPrice !== null){
-      alert('ok')
+
+      removeUser();
+      removeData();
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Thanks",
+        showConfirmButton: false,
+        timer: 1500
+      })
+      navigate('/');
+
     }else{
-      alert('you are not valid user')
+      Swal.fire({
+        position: "middle",
+        icon: "error",
+        title: "You are not valid user",
+        showConfirmButton: false,
+        timer: 1500
+      })
     }
 
   }
@@ -90,7 +114,7 @@ const CartTable = () => {
                 </label>
                 <input
                   type="text"
-                  value={300}
+                  value={totalPrice}
                   placeholder="your total price"
                   className="input input-bordered"
                   name="totalPrice"
