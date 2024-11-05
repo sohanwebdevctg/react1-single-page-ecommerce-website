@@ -68,7 +68,7 @@ const SingleProduct = () => {
     // get data
     const saveCart = {
       id: data.id,
-      details : data.details,
+      title : data.title,
       image : selectImage ? selectImage : (product?.image && product?.image[0]),
       quantity : quantity,
       price : data.price,
@@ -84,13 +84,14 @@ const SingleProduct = () => {
 
       if(!itemExists){
         setData(saveCart);
-      Swal.fire({
-        position: "top-end",
-        icon: "success",
-        title: "Your data has been saved",
-        showConfirmButton: false,
-        timer: 1500
-      })
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Your data has been saved",
+          showConfirmButton: false,
+          timer: 1500
+        })
+        navigate('/cart-table');
       }else{
         Swal.fire({
           icon: "error",
@@ -98,8 +99,6 @@ const SingleProduct = () => {
           text: "Your data already Existed",
         });
       }
-      
-
     }else{
       Swal.fire({
         icon: "error",

@@ -8,6 +8,7 @@ import Blog from "../Pages/Blog/Blog";
 import SingleProduct from "../Pages/SingleProduct/SingleProduct";
 import CartTable from "../Pages/CartTable/CartTable";
 import Login from "../Pages/Login/Login";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/cart-table',
-        element : <CartTable></CartTable>
+        element : <PrivateRoute><CartTable></CartTable></PrivateRoute>
       },
       {
         path: '/shop',

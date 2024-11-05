@@ -1,4 +1,14 @@
+import { useState } from "react";
+import { getData, getUser } from "../../utilities/localstorage";
+
 const CartTable = () => {
+
+  // user data
+  const [user, setUser] = useState(() => getUser());
+
+  const [data, setData] = useState(() => getData());
+
+  //
 
   // buy data
   const buyData = (event) => {
@@ -12,7 +22,11 @@ const CartTable = () => {
     const email = form.email.value;
     const accountNumber = form.accountNumber.value;
 
-    console.log(totalItem, totalPrice, email, accountNumber)
+    if(email === user.email && accountNumber !== null && totalItem !== null && totalPrice !== null){
+      alert('ok')
+    }else{
+      alert('you are not valid user')
+    }
 
   }
 
@@ -36,23 +50,18 @@ const CartTable = () => {
                 </tr>
               </thead>
               <tbody>
-                {/* row 1 */}
-                <tr className="hover:bg-slate-100">
-                  <td>1</td>
-                  <td>one</td>
-                  <td>Quality Control Specialist</td>
-                  <td>30</td>
-                  <td>2</td>
-                  <td>60</td>
-                </tr>
-                <tr className="hover:bg-slate-100">
-                  <td>1</td>
-                  <td>one</td>
-                  <td>Quality Control Specialist</td>
-                  <td>30</td>
-                  <td>2</td>
-                  <td>60</td>
-                </tr>
+                {
+                  data.map((item, index) => <tr key={index} className="hover:bg-slate-100">
+                  <td>{++index}</td>
+                  <td>
+                    <img src={item?.image} className="w-10 h-10"></img>
+                  </td>
+                  <td><p>{item?.title}</p></td>
+                  <td>{item?.price}</td>
+                  <td>{item?.quantity}</td>
+                  <td>{item?.total}</td>
+                </tr>)
+                }
               </tbody>
             </table>
           </div>
@@ -69,7 +78,7 @@ const CartTable = () => {
                   </label>
                   <input
                     type="text"
-                    value={20}
+                    value={data.length}
                     placeholder="your total item"
                     className="input input-bordered w-full"
                     name="totalItem"
