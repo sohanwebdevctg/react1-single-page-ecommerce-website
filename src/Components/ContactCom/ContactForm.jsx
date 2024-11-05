@@ -5,6 +5,11 @@ import { FaLocationDot } from "react-icons/fa6";
 
 
 const ContactForm = () => {
+
+  const contactForm = (event) => {
+    event.preventDefault()
+  }
+
   return (
     <>
       <div className="px-5 sm:px-4 md:px-4 my-16">
@@ -44,7 +49,7 @@ const ContactForm = () => {
           {/* left end */}
           {/* right start */}
           <div className="flex-1 mt-10 sm:mt-0">
-            <form className="bg-white shadow-lg p-4 xl:p-8 space-y-3 sm:space-y-3 xl:space-y-5 rounded-md">
+            <form onSubmit={contactForm} className="bg-white shadow-lg p-4 xl:p-8 space-y-3 sm:space-y-3 xl:space-y-5 rounded-md">
               <div>
                 <h1 className="text-lg sm:text-lg md:text-xl lg:text-[22px] xl:text-2xl font-bold">Send Message</h1>
                 <p className="text-xs sm:text-[13px] md:text-sm lg:text-base xl:text-sm w-full lg:w-[90%] mt-3 text-gray-500">Can you share us your name, your email address, your phone number, your address, and what type topic you want to talk us please feel free contact us.</p>

@@ -1,9 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import loginImg from '../../../public/login/login.png';
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { setUser } from '../../utilities/localstorage';
+import Swal from 'sweetalert2';
 
 const Login = () => {
 
@@ -20,10 +18,20 @@ const Login = () => {
     const user = true;
 
     if(email === null && password === null){
-      toast("Wow so easy!");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+      });
     }else{
       const userValue = {email: email, password : password, user : user};
-      toast("your are logged in now");
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "You are now Logged in",
+        showConfirmButton: false,
+        timer: 1500
+      });
       setUser(userValue)
       form.reset();
       navigate('/');
@@ -85,9 +93,6 @@ const Login = () => {
         </div>
         {/* content section end */}
       </div>
-      {/* toast start */}
-      <ToastContainer />
-      {/* toast end */}
     </>
   );
 };

@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
 import { FaMinusSquare, FaPlusSquare, FaStar } from "react-icons/fa";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-import { getUser } from "../../utilities/localstorage";
+import { getData, getUser, setData } from "../../utilities/localstorage";
 
 
 const SingleProduct = () => {
@@ -53,7 +50,11 @@ const SingleProduct = () => {
       setQuantity(quantity = quantity - data);
       setTotal(quantity * totalData)
     }else{
-      toast("Your data is too small");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Your data is too small",
+      });
     }
   }
   
@@ -74,12 +75,31 @@ const SingleProduct = () => {
       total : total > data?.price ? total : data?.price
     }
 
-    console.log(saveCart)
-
     // user checked if user logged in
     if(user.email && user.email){
 
-      toast("success");
+      let previousData = getData();
+
+      const itemExists = previousData.find((item) => item.id === saveCart.id);
+
+      if(!itemExists){
+        setData(saveCart);
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Your data has been saved",
+        showConfirmButton: false,
+        timer: 1500
+      })
+      }else{
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Your data already Existed",
+        });
+      }
+      
+
     }else{
       Swal.fire({
         icon: "error",
@@ -90,6 +110,8 @@ const SingleProduct = () => {
     }
 
   }
+
+  console.log(getData())
 
   return (
     <>
@@ -203,9 +225,6 @@ const SingleProduct = () => {
         </div>
         {/* content section end */}
       </div>
-      {/* react toast start */}
-      <ToastContainer />
-      {/* react toast end */}
     </>
   );
 };
