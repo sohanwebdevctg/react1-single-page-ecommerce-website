@@ -1,12 +1,23 @@
 import { useEffect, useState } from "react";
 import { FaMinusSquare, FaPlusSquare, FaStar } from "react-icons/fa";
-import { useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
+
+import Swal from 'sweetalert2'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { getUser } from "../../utilities/localstorage";
+
 
 const SingleProduct = () => {
+
+  // user data
+  const [user, setUser] = useState(() => getUser());
+
+  //navigate
+  const navigate = useNavigate();
+
 
   // find-out id
   const {id} = useParams();
@@ -47,12 +58,12 @@ const SingleProduct = () => {
   }
   
   //all data
-  const [allData, setAllData] = useState([])
   const [selectImage, setSelectImage] = useState()
 
 
   // save Data
   const saveBtn = (data) => {
+
     // get data
     const saveCart = {
       id: data.id,
@@ -65,21 +76,19 @@ const SingleProduct = () => {
 
     console.log(saveCart)
 
+    // user checked if user logged in
+    if(user.email && user.email){
 
-    // ehecking id
-    let setData = allData.find(item => item.id === data.id);
-
-    // set localStorage data
-    if(setData){
-
-      toast("sorry");
-
-    }else{
-
-      setAllData([...allData, saveCart]);
       toast("success");
-      
+    }else{
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please login",
+      });
+      navigate('/login')
     }
+
   }
 
   return (

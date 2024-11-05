@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { createContext } from "react";
 import { getUser } from "../utilities/localstorage";
 
@@ -7,14 +7,10 @@ export const AuthContext = createContext(null);
 export const AuthProvider = ({children}) => {
 
   // user data
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(() => getUser())
 
-  useEffect(() => {
-    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
-    setUser(userInfo)
-  },[setUser])
 
-  const information = {user, setUser}
+  const information = {user}
 
 
   return (

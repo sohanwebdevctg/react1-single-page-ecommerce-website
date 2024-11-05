@@ -1,20 +1,24 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { FaShoppingCart } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoClose } from "react-icons/io5";
-import { useContext, useState } from "react";
-import { AuthContext } from "../../Providers/AuthProvider";
+import { IoClose, IoLogOut } from "react-icons/io5";
+import { useState } from "react";
+import { getUser, removeUser } from "../../utilities/localstorage";
+
 
 const Navbar = () => {
   // toggle button
   const [toggle, setToggle] = useState(false);
 
-  //context
-  const {user} = useContext(AuthContext);
-
-  console.log(user?.email)
+  // user data
+  const [user, setUser] = useState(() => getUser());
+  
+  //remove function
+  const removeFun = () => {
+    removeUser();
+  }
 
   return (
     <>
@@ -99,30 +103,16 @@ const Navbar = () => {
             {/* right side start */}
             <div>
               <ul className="flex items-center md:gap-3 lg:gap-4 xl:gap-5 2xl:gap-6">
-                <li>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "md:text-xs lg:text-sm xl:text-base 2xl:text-xl text-red-600"
-                        : "md:text-xs lg:text-sm xl:text-base 2xl:text-xl"
-                    }
-                    to="/cart-table"
-                  >
+                {
+                  (user?.email && user?.user) && <li>
+                  <Link className= "md:text-xs lg:text-sm xl:text-base 2xl:text-xl text-red-600" to="/cart-table">
                     <FaShoppingCart></FaShoppingCart>
-                  </NavLink>
+                  </Link>
                 </li>
-                <li>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-red-600"
-                        : "md:text-sm lg:text-base xl:text-lg 2xl:text-xl"
-                    }
-                    to="/login"
-                  >
-                    <IoMdPerson></IoMdPerson>
-                  </NavLink>
-                </li>
+                }
+                {
+                  (user?.email && user?.user) ? <li onClick={() => removeFun()}><Link className= "md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-red-600" to="/"><IoLogOut /></Link></li> : <li><Link className= "md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-red-600" to="/login"><IoMdPerson></IoMdPerson></Link></li>
+                }
               </ul>
             </div>
             {/* right side end */}
@@ -157,7 +147,7 @@ const Navbar = () => {
           {/* link section start */}
           <div className={`${toggle ? 'top-20 sm:top-24 bottom-0 right-0 left-0' : 'top-20 sm:top-24 -left-96 right-[1000px] bottom-0' } fixed transform duration-500 easy-in bg-slate-200 z-50`}>
               <ul className="flex flex-col justify-center items-center h-full w-full gap-7 sm:gap-8">
-                <li>
+                <li onClick={() => setToggle(!toggle)}>
                   <NavLink
                     className={({ isActive }) =>
                       isActive
@@ -169,7 +159,7 @@ const Navbar = () => {
                     Home
                   </NavLink>
                 </li>
-                <li>
+                <li onClick={() => setToggle(!toggle)}>
                   <NavLink
                     className={({ isActive }) =>
                       isActive
@@ -181,7 +171,7 @@ const Navbar = () => {
                     Shop
                   </NavLink>
                 </li>
-                <li>
+                <li onClick={() => setToggle(!toggle)}>
                   <NavLink
                     className={({ isActive }) =>
                       isActive
@@ -193,7 +183,7 @@ const Navbar = () => {
                     Blog
                   </NavLink>
                 </li>
-                <li>
+                <li onClick={() => setToggle(!toggle)}>
                   <NavLink
                     className={({ isActive }) =>
                       isActive
@@ -205,7 +195,7 @@ const Navbar = () => {
                     About
                   </NavLink>
                 </li>
-                <li>
+                <li onClick={() => setToggle(!toggle)}>
                   <NavLink
                     className={({ isActive }) =>
                       isActive
@@ -219,30 +209,16 @@ const Navbar = () => {
                 </li>
                 <li>
                 <ul className="flex items-center gap-5">
-                <li>
-                  <NavLink 
-                    className={({ isActive }) =>
-                      isActive
-                        ? "text-lg sm:text-xl text-red-600"
-                        : "text-lg sm:text-xl"
-                    }
-                    to="/cart-table"
-                  >
+                {
+                  (user?.email && user?.user) && <li onClick={() => setToggle(!toggle)}>
+                  <Link className= "text-lg sm:text-xl text-red-600" to="/cart-table">
                     <FaShoppingCart></FaShoppingCart>
-                  </NavLink>
+                  </Link>
                 </li>
-                <li>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "text-lg sm:text-xl text-red-600"
-                        : "text-lg sm:text-xl"
-                    }
-                    to="/login"
-                  >
-                    <IoMdPerson></IoMdPerson>
-                  </NavLink>
-                </li>
+                }
+                {
+                  (user?.email && user?.user) ? <li onClick={() => {setToggle(!toggle), removeFun()}}><Link className= "text-lg sm:text-xl text-red-600" to="/"><IoLogOut /></Link></li> : <li onClick={() => setToggle(!toggle)}><Link className= "text-lg sm:text-xl text-red-600" to="/login"><IoMdPerson></IoMdPerson></Link></li>
+                }
               </ul>
                 </li>
               </ul>
