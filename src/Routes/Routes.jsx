@@ -9,6 +9,7 @@ import SingleProduct from "../Pages/SingleProduct/SingleProduct";
 import CartTable from "../Pages/CartTable/CartTable";
 import Login from "../Pages/Login/Login";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../Components/ErrorPage/ErrorPage";
 
 
 
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
