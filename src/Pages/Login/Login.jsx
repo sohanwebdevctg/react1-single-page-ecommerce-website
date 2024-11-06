@@ -26,7 +26,7 @@ const Login = () => {
     }else{
       const userValue = {email: email, password : password, user : user};
       Swal.fire({
-        position: "top-end",
+        position: "middle",
         icon: "success",
         title: "You are now Logged in",
         showConfirmButton: false,

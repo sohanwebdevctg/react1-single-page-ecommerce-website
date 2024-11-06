@@ -85,13 +85,14 @@ const SingleProduct = () => {
       if(!itemExists){
         setData(saveCart);
         Swal.fire({
-          position: "top-end",
+          position: "middle",
           icon: "success",
           title: "Your data has been saved",
           showConfirmButton: false,
           timer: 1500
-        })
-        navigate('/cart-table');
+        });
+
+        location.reload();
       }else{
         Swal.fire({
           icon: "error",
@@ -108,9 +109,10 @@ const SingleProduct = () => {
       navigate('/login')
     }
 
-  }
 
-  console.log(getData())
+    
+
+  }
 
   return (
     <>
@@ -210,7 +212,7 @@ const SingleProduct = () => {
                     Add to Cart
                   </button>
                   <button
-                    // onClick={previousPage}
+                    onClick={() => navigate('/shop')}
                     className="bg-red-600 text-white btn btn-xs sm:btn-xs md:btn-sm lg:btn-sm xl:btn-md hover:bg-red-600 ml-2 px-3 py-2"
                   >
                     Back

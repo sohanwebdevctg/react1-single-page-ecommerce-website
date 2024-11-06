@@ -1,11 +1,12 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 import { FaShoppingCart } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose, IoLogOut } from "react-icons/io5";
 import { useState } from "react";
-import { getUser, removeUser } from "../../utilities/localstorage";
+import { getData, getUser, removeUser } from "../../utilities/localstorage";
+import Swal from "sweetalert2";
 
 
 const Navbar = () => {
@@ -14,10 +15,26 @@ const Navbar = () => {
 
   // user data
   const [user, setUser] = useState(() => getUser());
+  const [data, setData] = useState(() => getData())
+
+  //navigate
+  const navigate = useNavigate();
   
   //remove function
   const removeFun = () => {
+    Swal.fire({
+      position: "middle",
+      icon: "success",
+      title: "You are now Logged out",
+      showConfirmButton: false,
+      timer: 1500
+    });
     removeUser();
+    navigate('/');
+
+    // only page reload
+    location.reload();
+
   }
 
   return (
@@ -32,6 +49,7 @@ const Navbar = () => {
                 src="/public/logo/logo.png"
                 className="md:w-20 md:h-10 lg:w-24 lg:h-11 xl:w-28 xl:h-11 2xl:w-32 2xl:h-12"
               ></img>
+
             </div>
             {/* left side end */}
             {/* middle side start */}
@@ -103,10 +121,14 @@ const Navbar = () => {
             {/* right side start */}
             <div>
               <ul className="flex items-center md:gap-3 lg:gap-4 xl:gap-5 2xl:gap-6">
+                
                 {
                   (user?.email && user?.user) && <li>
-                  <Link className= "md:text-xs lg:text-sm xl:text-base 2xl:text-xl text-red-600" to="/cart-table">
-                    <FaShoppingCart></FaShoppingCart>
+                  <Link to="/cart-table">
+                  <div className="indicator">
+                  <FaShoppingCart className="md:text-xs lg:text-sm xl:text-base 2xl:text-xl text-red-600"></FaShoppingCart>
+                  <span className="badge badge-sm indicator-item">{data ? data?.length : 0}</span>
+                </div>
                   </Link>
                 </li>
                 }
@@ -210,11 +232,14 @@ const Navbar = () => {
                 <li>
                 <ul className="flex items-center gap-5">
                 {
-                  (user?.email && user?.user) && <li onClick={() => setToggle(!toggle)}>
-                  <Link className= "text-lg sm:text-xl text-red-600" to="/cart-table">
-                    <FaShoppingCart></FaShoppingCart>
-                  </Link>
-                </li>
+                  (user?.email && user?.user) && <li onClick={() => {setToggle(!toggle)}}>
+                <Link to="/cart-table">
+                <div className="indicator">
+                <FaShoppingCart className="text-lg sm:text-xl text-red-600"></FaShoppingCart>
+                <span className="badge badge-sm indicator-item">{data ? data?.length : 0}</span>
+              </div>
+                </Link>
+              </li>
                 }
                 {
                   (user?.email && user?.user) ? <li onClick={() => {setToggle(!toggle), removeFun()}}><Link className= "text-lg sm:text-xl text-red-600" to="/"><IoLogOut /></Link></li> : <li onClick={() => setToggle(!toggle)}><Link className= "text-lg sm:text-xl text-red-600" to="/login"><IoMdPerson></IoMdPerson></Link></li>

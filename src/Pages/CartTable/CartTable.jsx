@@ -34,13 +34,14 @@ const CartTable = () => {
       removeUser();
       removeData();
       Swal.fire({
-        position: "top-end",
+        position: "middle",
         icon: "success",
-        title: "Thanks",
+        title: "Your most welcome",
         showConfirmButton: false,
         timer: 1500
       })
       navigate('/');
+      location.reload();
 
     }else{
       Swal.fire({
@@ -73,20 +74,23 @@ const CartTable = () => {
                   <th>SubTotal</th>
                 </tr>
               </thead>
-              <tbody>
-                {
-                  data.map((item, index) => <tr key={index} className="hover:bg-slate-100">
-                  <td>{++index}</td>
-                  <td>
-                    <img src={item?.image} className="w-10 h-10"></img>
-                  </td>
-                  <td><p>{item?.title}</p></td>
-                  <td>{item?.price}</td>
-                  <td>{item?.quantity}</td>
-                  <td>{item?.total}</td>
-                </tr>)
-                }
-              </tbody>
+              {
+                data.length > 0 ? (<tbody>
+                  {
+                    data.map((item, index) => <tr key={index} className="hover:bg-slate-100">
+                    <td>{++index}</td>
+                    <td>
+                      <img src={item?.image} className="w-10 h-10"></img>
+                    </td>
+                    <td><p>{item?.title}</p></td>
+                    <td>{item?.price}</td>
+                    <td>{item?.quantity}</td>
+                    <td>{item?.total}</td>
+                  </tr>)
+                  }
+                </tbody>) : (<p className="text-center mx-auto w-full">No data available</p>)
+              }
+              
             </table>
           </div>
           {/* table end */}
