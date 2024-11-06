@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import Banner from "../../Components/HomeCom/Banner";
 import FeaturedProducts from "../../Components/HomeCom/FeaturedProducts";
 import Gallery from "../../Components/HomeCom/Gallery";
@@ -7,12 +7,16 @@ import OurBrand from "../../Components/HomeCom/OurBrand";
 import RecentView from "../../Components/HomeCom/RecentView";
 import RepairService from "../../Components/HomeCom/RepairService";
 import Support from "../../Components/HomeCom/Support";
+import Title from "../../Components/Title/Title";
 
 
 const Home = () => {
 
   return (
     <div>
+      {/* title start */}
+      <Title name={'home'}></Title>
+      {/* title end */}
       {/* banner start */}
       <Banner></Banner>
       {/* banner end */}

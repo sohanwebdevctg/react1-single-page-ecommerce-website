@@ -2,6 +2,7 @@ import { useState } from "react";
 import { getData, getUser, removeData, removeUser } from "../../utilities/localstorage";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import Title from "../../Components/Title/Title";
 
 const CartTable = () => {
 
@@ -57,6 +58,9 @@ const CartTable = () => {
 
   return (
     <>
+    {/* title start */}
+    <Title name={'cart-table'}></Title>
+      {/* title end */}
       <div className="my-8 xl:my-10 ">
         {/* content section start */}
         <div className="container mx-auto px-5 lg:px-8 xl:px-10 ">

@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import loginImg from '../../../public/login/login.png';
 import { setUser } from '../../utilities/localstorage';
 import Swal from 'sweetalert2';
+import Title from '../../Components/Title/Title';
 
 const Login = () => {
 
@@ -41,6 +42,9 @@ const Login = () => {
 
   return (
     <>
+    {/* title start */}
+    <Title name={'login'}></Title>
+      {/* title end */}
       <div className="my-8 xl:my-10 bg-white h-full sm:h-screen flex items-center px-5">
         {/* content section start */}
         <div className="container mx-auto">

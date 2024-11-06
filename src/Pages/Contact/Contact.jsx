@@ -1,6 +1,7 @@
 import ContactBanner from "../../Components/ContactCom/ContactBanner";
 import ContactForm from "../../Components/ContactCom/ContactForm";
 import Location from "../../Components/ContactCom/Location";
+import Title from "../../Components/Title/Title";
 
 
 
@@ -8,6 +9,9 @@ import Location from "../../Components/ContactCom/Location";
 const Contact = () => {
   return (
     <div>
+      {/* title start */}
+      <Title name={'contact'}></Title>
+      {/* title end */}
       {/* contactBanner start */}
       <ContactBanner></ContactBanner>
       {/* contactBanner end */}

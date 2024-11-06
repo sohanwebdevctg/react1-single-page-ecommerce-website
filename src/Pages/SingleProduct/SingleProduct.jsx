@@ -5,6 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Swal from 'sweetalert2';
 
 import { getData, getUser, setData } from "../../utilities/localstorage";
+import Title from "../../Components/Title/Title";
 
 
 const SingleProduct = () => {
@@ -109,13 +110,13 @@ const SingleProduct = () => {
       navigate('/login')
     }
 
-
-    
-
   }
 
   return (
     <>
+    {/* title start */}
+    <Title name={`${product && product?.title}`}></Title>
+      {/* title end */}
       <div className="px-3 sm:px-4 md:px-4 lg:px-6 my-10 sm:my-10">
         {/* content section start */}
         <div className="container mx-auto h-full w-full py-5 px-2 sm:px-5 md:px-4 lg:px-8 xl:px-12 shadow-lg">
