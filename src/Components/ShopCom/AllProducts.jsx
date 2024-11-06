@@ -1,18 +1,29 @@
 import { useEffect, useState } from "react";
 import ShopCart from "./ShopCart";
+import Loading from "../../Pages/Loading/Loading";
 
 
 const AllProducts = () => {
 
   //const data
   const [datas, setDatas] = useState([]);
+  const [load, setLoad] = useState(false)
 
   //load data
   useEffect(() => {
+    setLoad(true)
     fetch('allProducts.json')
     .then((res) => res.json())
-    .then((data) => setDatas(data))
+    .then((data) => {
+      setDatas(data)
+      setLoad(false)
+    })
   },[])
+  
+  //loading
+  if(load){
+    return <Loading></Loading>
+  }
 
   return (
     <>

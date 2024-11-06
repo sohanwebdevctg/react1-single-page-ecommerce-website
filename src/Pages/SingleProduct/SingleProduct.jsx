@@ -6,12 +6,15 @@ import Swal from 'sweetalert2';
 
 import { getData, getUser, setData } from "../../utilities/localstorage";
 import Title from "../../Components/Title/Title";
+import Loading from "../Loading/Loading";
 
 
 const SingleProduct = () => {
 
   // user data
   const [user, setUser] = useState(() => getUser());
+
+  const [load, setLoad] = useState(false)
 
   //navigate
   const navigate = useNavigate();
@@ -25,12 +28,14 @@ const SingleProduct = () => {
 
   //loading data
   useEffect(() => {
+    setLoad(true);
     fetch('/allProducts.json')
     .then((res) => res.json())
     .then((data) => {
       if(data.length > 0){
         const findProduct = data.find((item) => item.id === parseInt(id));
-        setProduct(findProduct)
+        setProduct(findProduct);
+        setLoad(false);
       }
     })
   },[id]);
@@ -109,7 +114,11 @@ const SingleProduct = () => {
       });
       navigate('/login')
     }
+  }
 
+  //loading data
+  if(load){
+    return <Loading></Loading>
   }
 
   return (

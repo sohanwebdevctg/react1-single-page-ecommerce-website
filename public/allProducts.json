@@ -2,8 +2,7 @@
   {
     "id": 1,
     "image": ["/public/home/bag1/bag1.png", "/public/home/bag1/bag2.png", "/public/home/bag1/bag3.png"],
-    "brandName": "BrandA",
-    "title": "Product 1",
+    "title": "Handbags",
     "details": "A stylish, versatile women's bag designed for everyday use. Made from premium, durable materials, it features multiple compartments for easy organization and a comfortable, adjustable strap for convenience",
     "rating": "4.5",
     "price": 29,
@@ -13,8 +12,7 @@
   {
     "id": 2,
     "image": ["/public/home/blower2/blower1.png", "/public/home/blower2/blower2.png", "/public/home/blower2/blower3.png"],
-    "brandName": "BrandB",
-    "title": "Product 2",
+    "title": "Hair Dryer",
     "details": "A high-quality hair blower designed for efficient styling, this device features advanced heat and airflow settings to cater to all hair types. With powerful drying technology, it reduces drying time while minimizing frizz and damage",
     "rating": "4.0",
     "price": 19,
@@ -24,8 +22,7 @@
   {
     "id": 3,
     "image": ["/public/home/buttonUp/buttonUp1.png", "/public/home/buttonUp/buttonUp2.png", "/public/home/buttonUp/buttonUp3.png"],
-    "brandName": "BrandC",
-    "title": "Product 3",
+    "title": "Button Up Cloths",
     "details": "This elegant full dress is designed to combine comfort and style for any occasion. Made from high-quality, breathable fabric, it drapes beautifully and feels soft on the skin. The dress features a flattering silhouette with a fitted bodice",
     "rating": "4.8",
     "price": 39,
@@ -35,8 +32,7 @@
   {
     "id": 4,
     "image": ["/public/home/coats/coats1.png", "/public/home/coats/coats2.png", "/public/home/coats/coats3.png"],
-    "brandName": "BrandD",
-    "title": "Product 4",
+    "title": "Long Coat",
     "details": "This elegant full dress is designed to combine comfort and style for any occasion. Made from high-quality, breathable fabric, it drapes beautifully and feels soft on the skin. The dress features a flattering silhouette with a fitted bodice",
     "rating": "4.2",
     "price": 24,
@@ -46,8 +42,7 @@
   {
     "id": 5,
     "image": ["/public/home/hoodies/hoodies1.png", "/public/home/hoodies/hoodies2.png", "/public/home/hoodies/hoodies3.png"],
-    "brandName": "BrandE",
-    "title": "Product 5",
+    "title": "Hoodies",
     "details": "This cozy sweater is crafted from a soft, premium knit blend, ensuring warmth and comfort for chilly days. Designed with a relaxed fit, it drapes effortlessly, offering both style and ease of movement",
     "rating": "5.0",
     "price": 49,
@@ -57,8 +52,7 @@
   {
     "id": 6,
     "image": ["/public/home/earing/earing1.png", "/public/home/earing/earing2.png", "/public/home/earing/earing3.png"],
-    "brandName": "BrandF",
-    "title": "Product 6",
+    "title": "Earing Jewellery",
     "details": "Our exquisite jewelry collection features timeless designs crafted from high-quality materials such as gold, silver, and platinum. Each piece is meticulously designed, with options ranging from classic necklaces, elegant bracelets, and delicate earrings to statement rings and pendants",
     "rating": "3.8",
     "price": 15,
@@ -68,8 +62,7 @@
   {
     "id": 7,
     "image": ["/public/home/choker/choker1.png", "/public/home/choker/choker2.png", "/public/home/choker/choker3.png"],
-    "brandName": "BrandG",
-    "title": "Product 7",
+    "title": "Choker Jewellery",
     "details": "Our exquisite jewelry collection features timeless designs crafted from high-quality materials such as gold, silver, and platinum. Each piece is meticulously designed, with options ranging from classic necklaces, elegant bracelets, and delicate earrings to statement rings and pendants",
     "rating": "4.7",
     "price": 34,
@@ -79,8 +72,7 @@
   {
     "id": 8,
     "image": ["/public/home/makeup2/makeup1.png", "/public/home/makeup2/makeup2.png", "/public/home/makeup2/makeup3.png"],
-    "brandName": "BrandH",
-    "title": "Product 8",
+    "title": "Makeup Box",
     "details": "This stylish makeup box is designed for beauty enthusiasts, providing ample storage and organization for all your cosmetics and tools. Crafted from durable materials, it features a sleek exterior with a secure closure to keep your items safe",
     "rating": "4.1",
     "price": 22,
@@ -90,8 +82,7 @@
   {
     "id": 9,
     "image": ["/public/home/remover2/remover1.png", "/public/home/remover2/remover2.png", "/public/home/remover2/remover3.png"],
-    "brandName": "BrandI",
-    "title": "Product 9",
+    "title": "Hair Remover",
     "details": "This versatile electronic device is designed for convenience, functionality, and seamless performance. Built with advanced technology, it features a high-resolution display for clear visuals, a long-lasting battery for extended use, and a powerful processor that supports multitasking and fast operation",
     "rating": "4.9",
     "price": 45,
@@ -101,8 +92,7 @@
   {
     "id": 10,
     "image": ["/public/home/shocks1/shocks1.png", "/public/home/shoes1/shoes2.png", "/public/home/shocks1/shocks3.png"],
-    "brandName": "BrandJ",
-    "title": "Product 10",
+    "title": "Cotton Shocks",
     "details": "Our high-quality socks offer ultimate comfort, breathability, and support for everyday wear. Made from a soft, durable blend of cotton and elastane, they provide a snug fit without slipping or bunching",
     "rating": "3.9",
     "price": 17,
@@ -112,8 +102,7 @@
   {
     "id": 11,
     "image": ["/public/home/shoes2/shoes1.png", "/public/home/shocks2/shocks2.png", "/public/home/shoes2/shoes3.png"],
-    "brandName": "BrandK",
-    "title": "Product 11",
+    "title": "high heel shoes",
     "details": "These shoes blend style, comfort, and durability, making them perfect for both daily wear and special occasions. Crafted from high-quality materials, they feature a cushioned insole for all-day comfort and a non-slip, flexible outsole for excellent traction on various surfaces",
     "rating": "4.3",
     "price": 27,
@@ -123,8 +112,7 @@
   {
     "id": 12,
     "image": ["/public/home/skits/skirts1.png", "/public/home/skits/skirts2.png", "/public/home/skits/skirts3.png"],
-    "brandName": "BrandL",
-    "title": "Product 12",
+    "title": "Small Skirts",
     "details": "Our clothing collection offers a versatile selection of styles, crafted from quality materials for all-day comfort. The range includes essentials like classic tees, cozy sweaters, and comfortable jeans, alongside formal pieces like tailored blazers",
     "rating": "4.6",
     "price": 33,
@@ -134,8 +122,7 @@
   {
     "id": 13,
     "image": ["/public/home/sneaker1/sneaker1.png", "/public/home/sneaker1/sneaker2.png", "/public/home/sneaker1/sneaker3.png"],
-    "brandName": "BrandM",
-    "title": "Product 13",
+    "title": "Sneaker",
     "details": "These shoes blend style, comfort, and durability, making them perfect for both daily wear and special occasions. Crafted from high-quality materials, they feature a cushioned insole for all-day comfort and a non-slip, flexible outsole for excellent traction on various surfaces",
     "rating": "4.0",
     "price": 19,
@@ -145,8 +132,7 @@
   {
     "id": 14,
     "image": ["/public/home/tShirt/tShirt1.png", "/public/home/tShirt/tShirt2.png", "/public/home/tShirt/tShirt3.png"],
-    "brandName": "BrandN",
-    "title": "Product 14",
+    "title": "T-shirt",
     "details": "Our clothing collection offers a versatile selection of styles, crafted from quality materials for all-day comfort. The range includes essentials like classic tees, cozy sweaters, and comfortable jeans, alongside formal pieces like tailored blazers",
     "rating": "4.5",
     "price": 31,
@@ -156,8 +142,7 @@
   {
     "id": 15,
     "image": ["/public/home/wallet2/wallet1.png", "/public/home/wallet2/wallet2.png", "/public/home/wallet2/wallet3.png"],
-    "brandName": "BrandO",
-    "title": "Product 15",
+    "title": "Leather Wallet",
     "details": "This elegant women's wallet combines style and functionality, crafted from high-quality leather or durable synthetic materials. Its sleek design features multiple compartments for easy organization of cash, cards, and coins, including a dedicated zippered pocket for coins and additional slots for IDs and credit cards",
     "rating": "3.7",
     "price": 14,
@@ -167,8 +152,7 @@
   {
     "id": 16,
     "image": ["/public/home/watch2/watch1.png", "/public/home/watch2/watch2.png", "/public/home/watch2/watch3.png"],
-    "brandName": "BrandP",
-    "title": "Product 16",
+    "title": "Smart Watch",
     "details": "This versatile electronic device is designed for convenience, functionality, and seamless performance. Built with advanced technology, it features a high-resolution display for clear visuals, a long-lasting battery for extended use, and a powerful processor that supports multitasking and fast operation",
     "rating": "4.4",
     "price": 28,
@@ -178,8 +162,7 @@
   {
     "id": 17,
     "image": ["/public/home/cardigan/cardigan1.png", "/public/home/cardigan/cardigan2.png", "/public/home/cardigan/cardigan3.png"],
-    "brandName": "BrandQ",
-    "title": "Product 17",
+    "title": "Cotton Cardigan",
     "details": "This cozy sweater is crafted from a soft, premium knit blend, ensuring warmth and comfort for chilly days. Designed with a relaxed fit, it drapes effortlessly, offering both style and ease of movement",
     "rating": "4.9",
     "price": 46,
@@ -189,8 +172,7 @@
   {
     "id": 18,
     "image": ["/public/home/jackets/jackets1.png", "/public/home/jackets/jackets2.png", "/public/home/jackets/jackets3.png"],
-    "brandName": "BrandR",
-    "title": "Product 18",
+    "title": "Jackets",
     "details": "Our clothing collection offers a versatile selection of styles, crafted from quality materials for all-day comfort. The range includes essentials like classic tees, cozy sweaters, and comfortable jeans, alongside formal pieces like tailored blazers",
     "rating": "3.8",
     "price": 16,
@@ -201,8 +183,7 @@
   {
     "id": 19,
     "image": ["/public/home/bag2/bag1.png", "/public/home/bag2/bag2.png", "/public/home/bag2/bag3.png"],
-    "brandName": "BrandS",
-    "title": "Product 19",
+    "title": "Handbags",
     "details": "A stylish, versatile women's bag designed for everyday use. Made from premium, durable materials, it features multiple compartments for easy organization and a comfortable, adjustable strap for convenience",
     "rating": "4.5",
     "price": 29,
@@ -212,8 +193,7 @@
   {
     "id": 20,
     "image": ["/public/home/blower1/blower1.png", "/public/home/blower1/blower2.png", "/public/home/blower1/blower3.png"],
-    "brandName": "BrandT",
-    "title": "Product 20",
+    "title": "Hair Blower",
     "details": "A high-quality hair blower designed for efficient styling, this device features advanced heat and airflow settings to cater to all hair types. With powerful drying technology, it reduces drying time while minimizing frizz and damage",
     "rating": "4.0",
     "price": 19,
@@ -223,8 +203,7 @@
   {
     "id": 21,
     "image": ["/public/home/cutePajamas/cutePajamas1.png", "/public/home/cutePajamas/cutePajamas2.png", "/public/home/cutePajamas/cutePajamas3.png"],
-    "brandName": "BrandU",
-    "title": "Product 21",
+    "title": "CutePajamas",
     "details": "This elegant full dress is designed to combine comfort and style for any occasion. Made from high-quality, breathable fabric, it drapes beautifully and feels soft on the skin. The dress features a flattering silhouette with a fitted bodice",
     "rating": "4.8",
     "price": 39,
@@ -234,8 +213,7 @@
   {
     "id": 22,
     "image": ["/public/home/jeans/jeans1.png", "/public/home/jeans/jeans2.png", "/public/home/jeans/jeans3.png"],
-    "brandName": "BrandV",
-    "title": "Product 22",
+    "title": "Jeans Pants",
     "details": "Our women's pants are crafted for comfort, style, and versatility. Made from high-quality fabrics like cotton, denim, or stretchy polyester blends, they offer a comfortable fit while retaining their shape throughout the day",
     "rating": "4.2",
     "price": 24,
@@ -245,8 +223,7 @@
   {
     "id": 23,
     "image": ["/public/home/necklace/necklace1.png", "/public/home/necklace/necklace2.png", "/public/home/necklace/necklace3.png"],
-    "brandName": "BrandW",
-    "title": "Product 23",
+    "title": "Necklace",
     "details": "Our exquisite jewelry collection features timeless designs crafted from high-quality materials such as gold, silver, and platinum. Each piece is meticulously designed, with options ranging from classic necklaces, elegant bracelets, and delicate earrings to statement rings and pendants",
     "rating": "5.0",
     "price": 49,
@@ -256,8 +233,7 @@
   {
     "id": 24,
     "image": ["/public/home/bracelet/bracelet1.png", "/public/home/bracelet/bracelet2.png", "/public/home/bracelet/bracelet3.png"],
-    "brandName": "BrandX",
-    "title": "Product 24",
+    "title": "Bracelet",
     "details": "Our exquisite jewelry collection features timeless designs crafted from high-quality materials such as gold, silver, and platinum. Each piece is meticulously designed, with options ranging from classic necklaces, elegant bracelets, and delicate earrings to statement rings and pendants",
     "rating": "3.8",
     "price": 15,
@@ -267,8 +243,7 @@
   {
     "id": 25,
     "image": ["/public/home/tika/tika1.png", "/public/home/tika/tika2.png", "/public/home/tika/tika3.png"],
-    "brandName": "BrandY",
-    "title": "Product 25",
+    "title": "Tika jewellery",
     "details": "Our exquisite jewelry collection features timeless designs crafted from high-quality materials such as gold, silver, and platinum. Each piece is meticulously designed, with options ranging from classic necklaces, elegant bracelets, and delicate earrings to statement rings and pendants",
     "rating": "4.7",
     "price": 34,
@@ -278,8 +253,7 @@
   {
     "id": 26,
     "image": ["/public/home/leggings/leggings1.png", "/public/home/leggings/leggings2.png", "/public/home/leggings/leggings3.png"],
-    "brandName": "BrandZ",
-    "title": "Product 26",
+    "title": "Leggings",
     "details": "Our women's pants are crafted for comfort, style, and versatility. Made from high-quality fabrics like cotton, denim, or stretchy polyester blends, they offer a comfortable fit while retaining their shape throughout the day",
     "rating": "4.1",
     "price": 22,
@@ -289,8 +263,7 @@
   {
     "id": 27,
     "image": ["/public/home/makeup1/makeup1.png", "/public/home/makeup1/makeup2.png", "/public/home/makeup1/makeup3.png"],
-    "brandName": "BrandAA",
-    "title": "Product 27",
+    "title": "Makeup Box",
     "details": "This stylish makeup box is designed for beauty enthusiasts, providing ample storage and organization for all your cosmetics and tools. Crafted from durable materials, it features a sleek exterior with a secure closure to keep your items safe",
     "rating": "4.9",
     "price": 45,
@@ -300,8 +273,7 @@
   {
     "id": 28,
     "image": ["/public/home/overalls/overalls1.png", "/public/home/overalls/overalls2.png", "/public/home/overalls/overalls3.png"],
-    "brandName": "BrandAB",
-    "title": "Product 28",
+    "title": "Over-Alls",
     "details": "This elegant full dress is designed to combine comfort and style for any occasion. Made from high-quality, breathable fabric, it drapes beautifully and feels soft on the skin. The dress features a flattering silhouette with a fitted bodice",
     "rating": "3.9",
     "price": 17,
@@ -311,8 +283,7 @@
   {
     "id": 29,
     "image": ["/public/home/remover1/remover1.png", "/public/home/remover1/remover2.png", "/public/home/remover1/remover3.png"],
-    "brandName": "BrandAC",
-    "title": "Product 29",
+    "title": "Hair Remover",
     "details": "This versatile electronic device is designed for convenience, functionality, and seamless performance. Built with advanced technology, it features a high-resolution display for clear visuals, a long-lasting battery for extended use, and a powerful processor that supports multitasking and fast operation",
     "rating": "4.3",
     "price": 27,
@@ -322,8 +293,7 @@
   {
     "id": 30,
     "image": ["/public/home/sneaker2/sneaker1.png", "/public/home/sneaker2/sneaker2.png", "/public/home/sneaker2/sneaker3.png"],
-    "brandName": "BrandAD",
-    "title": "Product 30",
+    "title": "sneaker",
     "details": "These shoes blend style, comfort, and durability, making them perfect for both daily wear and special occasions. Crafted from high-quality materials, they feature a cushioned insole for all-day comfort and a non-slip, flexible outsole for excellent traction on various surfaces",
     "rating": "4.6",
     "price": 33,
@@ -333,8 +303,7 @@
   {
     "id": 31,
     "image": ["/public/home/shocks2/shocks1.png", "/public/home/shoes2/shoes2.png", "/public/home/shocks2/shocks3.png"],
-    "brandName": "BrandAE",
-    "title": "Product 31",
+    "title": "Cotton Shocks",
     "details": "Our high-quality socks offer ultimate comfort, breathability, and support for everyday wear. Made from a soft, durable blend of cotton and elastane, they provide a snug fit without slipping or bunching",
     "rating": "4.0",
     "price": 19,
@@ -344,8 +313,7 @@
   {
     "id": 32,
     "image": ["/public/home/shoes1/shoes1.png", "/public/home/shoes1/shoes2.png", "/public/home/shoes1/shoes3.png"],
-    "brandName": "BrandAF",
-    "title": "Product 32",
+    "title": "High Shoes",
     "details": "These shoes blend style, comfort, and durability, making them perfect for both daily wear and special occasions. Crafted from high-quality materials, they feature a cushioned insole for all-day comfort and a non-slip, flexible outsole for excellent traction on various surfaces",
     "rating": "4.5",
     "price": 31,
@@ -355,8 +323,7 @@
   {
     "id": 33,
     "image": ["/public/home/shorts/shorts1.png", "/public/home/shorts/shorts2.png", "/public/home/shorts/shorts3.png"],
-    "brandName": "BrandAG",
-    "title": "Product 33",
+    "title": "Shorts Pent",
     "details": "Our clothing collection offers a versatile selection of styles, crafted from quality materials for all-day comfort. The range includes essentials like classic tees, cozy sweaters, and comfortable jeans, alongside formal pieces like tailored blazers",
     "rating": "3.7",
     "price": 14,
@@ -366,8 +333,7 @@
   {
     "id": 34,
     "image": ["/public/home/sweater/sweater1.png", "/public/home/sweater/sweater2.png", "/public/home/sweater/sweater3.png"],
-    "brandName": "BrandAH",
-    "title": "Product 34",
+    "title": "Cotton Sweater",
     "details": "This cozy sweater is crafted from a soft, premium knit blend, ensuring warmth and comfort for chilly days. Designed with a relaxed fit, it drapes effortlessly, offering both style and ease of movement",
     "rating": "4.4",
     "price": 28,
@@ -377,8 +343,7 @@
   {
     "id": 35,
     "image": ["/public/home/wallet1/wallet1.png", "/public/home/wallet1/wallet2.png", "/public/home/wallet1/wallet3.png"],
-    "brandName": "BrandAI",
-    "title": "Product 35",
+    "title": "Lather Wallert",
     "details": "This elegant women's wallet combines style and functionality, crafted from high-quality leather or durable synthetic materials. Its sleek design features multiple compartments for easy organization of cash, cards, and coins, including a dedicated zippered pocket for coins and additional slots for IDs and credit cards",
     "rating": "4.9",
     "price": 46,
@@ -388,8 +353,7 @@
   {
     "id": 36,
     "image": ["/public/home/watch1/watch1.png", "/public/home/watch1/watch2.png", "/public/home/watch1/watch3.png"],
-    "brandName": "BrandAJ",
-    "title": "Product 36",
+    "title": "Smart Watch",
     "details": "This versatile electronic device is designed for convenience, functionality, and seamless performance. Built with advanced technology, it features a high-resolution display for clear visuals, a long-lasting battery for extended use, and a powerful processor that supports multitasking and fast operation",
     "rating": "3.8",
     "price": 16,

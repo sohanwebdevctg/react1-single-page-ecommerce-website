@@ -13,7 +13,7 @@ const CartTable = () => {
   const navigate = useNavigate();
 
   //totalPrice
-  const totalPrice = data.reduce((accumulator ,item) => {
+  const totalPrice = data?.reduce((accumulator ,item) => {
     return accumulator += item.total;
   }, 0)
 
@@ -79,7 +79,7 @@ const CartTable = () => {
                 </tr>
               </thead>
               {
-                data.length > 0 ? (<tbody>
+                data?.length > 0 ? (<tbody>
                   {
                     data.map((item, index) => <tr key={index} className="hover:bg-slate-100">
                     <td>{++index}</td>
@@ -110,7 +110,7 @@ const CartTable = () => {
                   </label>
                   <input
                     type="text"
-                    value={data.length}
+                    value={data ? data?.length : 0}
                     placeholder="your total item"
                     className="input input-bordered w-full"
                     name="totalItem"
@@ -122,7 +122,7 @@ const CartTable = () => {
                 </label>
                 <input
                   type="text"
-                  value={totalPrice}
+                  value={totalPrice ? totalPrice : 0}
                   placeholder="your total price"
                   className="input input-bordered"
                   name="totalPrice"
