@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ShopCart from "./ShopCart";
 import Loading from "../../Pages/Loading/Loading";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 
 const AllProducts = () => {
@@ -27,6 +28,7 @@ const AllProducts = () => {
 
   return (
     <>
+      {/* data start */}
       <div className="my-8 xl:my-10">
         {/* content section start */}
         <div className="container mx-auto px-3 sm:px-4 md:px-5 lg:px-7 xl:px-10">
@@ -48,6 +50,13 @@ const AllProducts = () => {
         </div>
         {/* content section end */}
       </div>
+      {/* data end */}
+      {/* button start */}
+      <div className="my-8 flex justify-center items-center gap-3">
+      <FaArrowLeft className="bg-red-500 text-white text-xl xl:text-3xl p-1 rounded-full"/>
+      <FaArrowRight className="bg-red-500 text-white text-xl xl:text-3xl p-1 rounded-full"/>
+      </div>
+      {/* button end */}
     </>
   );
 };
