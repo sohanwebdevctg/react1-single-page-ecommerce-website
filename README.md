@@ -1,4 +1,4 @@
 * ### This project is basically a single page e-commerce website. This website sells women's cosmetics, clothes, electronics products and Other things too.The items bought and sold here will be fetched from the local store and set there and the data being shown is coming from the json file like api.In this project, a user can log in and then purchase the product. The same product cannot be purchased repeatedly.After purchasing a product here, it will go to his card table and from there he will be able to see the details of all the other products he has purchased and at the time of purchase he will have to purchase with his authentic email number and his bank number. If the user's email number does not match, then he will not be considered a verified user.This website is a dynamic website and responsive.
 
-* ### live link: ()
-* ### code link: ()
+* ### live link: (https://deft-meringue-fafba7.netlify.app)
+* ### code link: (https://github.com/sohanwebdevctg/react1-single-page-ecommerce-website)
