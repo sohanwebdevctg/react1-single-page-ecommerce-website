@@ -40,6 +40,8 @@ const SingleProduct = () => {
     })
   },[id]);
 
+  console.log(product)
+
   // total quantity
   let [quantity, setQuantity] = useState(1);
   let [total, setTotal] = useState(0);
