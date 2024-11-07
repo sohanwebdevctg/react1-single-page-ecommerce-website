@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 /* swiperAnimation section start */
 .sliderCon{
   box-shadow: 0 5px 5px 5px rgba(177, 12, 6, 0.753);
@@ -75,6 +76,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   z-index: 1;
 }
@@ -124,6 +126,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   z-index: 1;
 }
@@ -149,6 +152,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   z-index: 1;
 }
@@ -174,6 +178,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   z-index: 1;
 }
