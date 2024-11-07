@@ -1,0 +1,6 @@
+[
+  {"id": 1, "img": "./home/recent1.jpg","title": "Bed Room","description": "This is bed room", "price": 40, "rating": 4.7},
+  {"id": 2, "img": "./home/recent2.jpg", "title": "Window Room", "description": "this is window room", "price": 80, "rating": 4.9},
+  {"id": 3, "img": "./home/recent3.jpg", "title": "Hotel Room", "description": "this is hotel room", "price": 60,"rating": 5.0},
+  {"id": 4, "img": "./home/recent4.jpg","title": "Luxury Room", "description": "this is private room", "price": 140, "rating": 5.0}
+]
