@@ -8,7 +8,8 @@ const AllProducts = () => {
 
   //const data
   const [datas, setDatas] = useState([]);
-  const [load, setLoad] = useState(false)
+  const [load, setLoad] = useState(false);
+  
 
   //load data
   useEffect(() => {
@@ -19,7 +20,30 @@ const AllProducts = () => {
       setDatas(data)
       setLoad(false)
     })
-  },[])
+  },[]);
+
+  //pagination state
+  const itemPerPage = 10;
+  const [currentPage, setCurrentPage] = useState(1);
+  const startIndex = (currentPage -1) * itemPerPage;
+  const endIndex = startIndex + itemPerPage;
+  const currentItems = datas.slice(startIndex, endIndex)
+
+
+  //handlePrevious
+  const handlePrevious = () => {
+    if(currentPage > 1){
+      setCurrentPage(currentPage - 1);
+    }
+  }
+
+  //handleNext
+  const handleNext = () => {
+    if(currentPage < Math.ceil(datas.length / itemPerPage)){
+      setCurrentPage(currentPage + 1);
+    }
+  }
+
   
   //loading
   if(load){
@@ -40,7 +64,7 @@ const AllProducts = () => {
           {/* cart start */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-5 gap-1 sm:gap-2 md:gap-1 lg:gap-2 xl:gap-3 2xl:gap-4">
           {
-          datas.map((data, id) => <ShopCart
+          currentItems.map((data, id) => <ShopCart
           key={id}
           data={data}
           ></ShopCart>)
@@ -53,8 +77,12 @@ const AllProducts = () => {
       {/* data end */}
       {/* button start */}
       <div className="my-8 flex justify-center items-center gap-3">
-      <FaArrowLeft className="bg-red-500 text-white text-xl xl:text-3xl p-1 rounded-full"/>
-      <FaArrowRight className="bg-red-500 text-white text-xl xl:text-3xl p-1 rounded-full"/>
+        <button onClick={handlePrevious} disabled={currentPage === 1} className="disabled:opacity-50">
+          <FaArrowLeft  className="bg-red-500 text-white text-xl xl:text-3xl p-1"/>
+        </button>
+        <button onClick={handleNext} disabled={currentPage === Math.ceil(datas.length / itemPerPage)} className=" disabled:opacity-50">
+          <FaArrowRight className="bg-red-500 text-white text-xl xl:text-3xl p-1"/>
+        </button>
       </div>
       {/* button end */}
     </>
