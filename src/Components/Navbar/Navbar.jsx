@@ -4,7 +4,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose, IoLogOut } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getData, getUser, removeUser } from "../../utilities/localstorage";
 import Swal from "sweetalert2";
 
@@ -12,10 +12,21 @@ import Swal from "sweetalert2";
 const Navbar = () => {
   // toggle button
   const [toggle, setToggle] = useState(false);
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 50){
+        setActive(true);
+      }else{
+        setActive(false);
+      }
+    })
+  })
 
   // user data
   const [user, setUser] = useState(() => getUser());
-  const [data, setData] = useState(() => getData())
+  const [data, setData] = useState(() => getData());
 
   //navigate
   const navigate = useNavigate();
@@ -34,14 +45,14 @@ const Navbar = () => {
 
     // only page reload
     location.reload();
-
   }
 
   return (
     <>
       {/* content section start */}
         {/* desktop section start */}
-        <div className="container mx-auto ">
+        <div className={`${active ? 'fixed top-0 right-0 left-0 z-50 bg-white shadow-md shadow-slate-200': 'sticky bg-white'}`}>
+        <div className=" container mx-auto">
           <div className="hidden md:flex justify-between items-center md:h-24 2xl:h-28 md:px-7 lg:px-9 xl:px-10 2xl:px-12">
             {/* left side start */}
             <div>
@@ -140,11 +151,12 @@ const Navbar = () => {
             {/* right side end */}
           </div>
         </div>
+        </div>
         {/* desktop section end */}
         {/* mobile section start */}
         <div className="block md:hidden">
           {/* logo and button section start */}
-          <div className="flex justify-between items-center px-6 h-20 sm:h-24  bg-gray-200">
+          <div className={`${active ? 'fixed top-0 right-0 left-0 z-50 bg-white shadow-md shadow-slate-200': 'sticky bg-white'} flex justify-between items-center px-6 h-20 sm:h-24 `}>
             <div>
               <img
                 src="/public/logo/logo.png"
@@ -167,7 +179,7 @@ const Navbar = () => {
           </div>
           {/* logo and button section end */}
           {/* link section start */}
-          <div className={`${toggle ? 'top-20 sm:top-24 bottom-0 right-0 left-0' : 'top-20 sm:top-24 -left-96 right-[1000px] bottom-0' } fixed transform duration-500 easy-in bg-gray-300 z-50 bg-opacity-95`}>
+          <div className={`${toggle ? 'top-20 sm:top-24 bottom-0 right-0 left-0' : 'top-20 sm:top-24 -left-96 right-[1000px] bottom-0' } fixed transform duration-500 easy-in bg-slate-200 z-50 bg-opacity-95`}>
               <ul className="flex flex-col justify-center items-center h-full w-full gap-7 sm:gap-8">
                 <li onClick={() => setToggle(!toggle)}>
                   <NavLink

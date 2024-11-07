@@ -5,7 +5,7 @@ import BannerSlider from "./BannerSlider";
 const Banner = () => {
   return (
     <>
-      <div className='h-full xl:h-[420px] px-0 sm:px-4 md:px-4'>
+      <div className='h-full sm:mt-5 md:mt-0 xl:h-[420px] px-0 sm:px-4 md:px-4'>
       {/* content section start */}
       <div className='container mx-auto bg-[#F5F5F5] h-full w-full py-10 px-3 sm:px-5 md:px-4 lg:px-10 xl:px-12'>
         {/* item section start */}
