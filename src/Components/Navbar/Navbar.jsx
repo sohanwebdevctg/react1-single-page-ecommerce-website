@@ -142,9 +142,9 @@ const Navbar = () => {
         </div>
         {/* desktop section end */}
         {/* mobile section start */}
-        <div className="block md:hidden bg-gray-300">
+        <div className="block md:hidden">
           {/* logo and button section start */}
-          <div className="flex justify-between items-center px-6 h-20 sm:h-24">
+          <div className="flex justify-between items-center px-6 h-20 sm:h-24  bg-gray-200">
             <div>
               <img
                 src="/public/logo/logo.png"
@@ -167,7 +167,7 @@ const Navbar = () => {
           </div>
           {/* logo and button section end */}
           {/* link section start */}
-          <div className={`${toggle ? 'top-20 sm:top-24 bottom-0 right-0 left-0' : 'top-20 sm:top-24 -left-96 right-[1000px] bottom-0' } fixed transform duration-500 easy-in bg-slate-200 z-50`}>
+          <div className={`${toggle ? 'top-20 sm:top-24 bottom-0 right-0 left-0' : 'top-20 sm:top-24 -left-96 right-[1000px] bottom-0' } fixed transform duration-500 easy-in bg-gray-300 z-50 bg-opacity-95`}>
               <ul className="flex flex-col justify-center items-center h-full w-full gap-7 sm:gap-8">
                 <li onClick={() => setToggle(!toggle)}>
                   <NavLink
