@@ -10,7 +10,7 @@ const Footer = () => {
           {/* item1 start */}
           <div className="space-y-2">
             {/* title start */}
-            <h3 className="text-sm sm:text-base md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-bold">ABOUT US</h3>
+            <h3 className="text-sm sm:text-base md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-bold text-red-500">ABOUT US</h3>
             {/* title end */}
             {/* list start */}
             <ul className="space-y-2">
@@ -25,7 +25,7 @@ const Footer = () => {
           {/* item2 start */}
           <div className="space-y-2">
             {/* title start */}
-            <h3 className="text-sm sm:text-base md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-bold">CONTACT US</h3>
+            <h3 className="text-sm sm:text-base md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-bold text-red-500">CONTACT US</h3>
             {/* title end */}
             {/* list start */}
             <ul className="space-y-2">
@@ -40,7 +40,7 @@ const Footer = () => {
           {/* item3 start */}
           <div className="space-y-2">
             {/* title start */}
-            <h3 className="text-sm sm:text-base md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-bold">HELP</h3>
+            <h3 className="text-sm sm:text-base md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-bold text-red-500">HELP</h3>
             {/* title end */}
             {/* list start */}
             <ul className="space-y-2">
@@ -55,11 +55,11 @@ const Footer = () => {
           {/* item4 start */}
           <div className="space-y-2">
             {/* list start */}
-            <ul className="space-y-1 bg-black bg-opacity-40 text-left md:text-right py-2 sm:py-3 md:py-2 lg:py-3 xl:py-3 px-3 sm:px-5 md:px-3 lg:px-4 xl:px-5 rounded-ss-[32px] rounded-ee-[32px] xl:rounded-ss-[40px] xl:rounded-ee-[40px]">
-              <li className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm 2xl:text-base">01639402634</li>
-              <li className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm 2xl:text-base">xyzemail@gmail.com</li>
-              <li className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm 2xl:text-base">140th Avenue, SE</li>
-              <li className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm 2xl:text-base">Calgary, AB T20</li>
+            <ul className="space-y-1 bg-black bg-opacity-50 text-left md:text-right py-2 sm:py-3 md:py-2 lg:py-3 xl:py-3 px-3 sm:px-5 md:px-3 lg:px-4 xl:px-5 rounded-ss-[32px] rounded-ee-[32px] xl:rounded-ss-[40px] xl:rounded-ee-[40px]">
+              <li className="text-[10px] sm:text-xs md:text-[10px] lg:text-xs xl:text-sm 2xl:text-base">01639402634</li>
+              <li className="text-[10px] sm:text-xs md:text-[10px] lg:text-xs xl:text-sm 2xl:text-base text-red-600">xyzemail@gmail.com</li>
+              <li className="text-[10px] sm:text-xs md:text-[10px] lg:text-xs xl:text-sm 2xl:text-base text-slate-300">140th Avenue, SE</li>
+              <li className="text-[10px] sm:text-xs md:text-[10px] lg:text-xs xl:text-sm 2xl:text-base text-slate-300">Calgary, AB T20</li>
             </ul>
             {/* list end */}
             {/* social start */}
