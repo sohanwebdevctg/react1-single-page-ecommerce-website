@@ -17,7 +17,7 @@ const NewProducts = () => {
         setDatas(product)
       }
     })
-  },[])
+  },[]);
 
 
   return (

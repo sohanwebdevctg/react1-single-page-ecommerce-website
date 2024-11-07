@@ -4,8 +4,19 @@ import industry from '/public/blog/industry.jpg'
 import award from '/public/blog/award.jpg'
 import working from '/public/blog/working.jpg'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
+
 
 const BlogGallery = () => {
+
+  
+  //aos
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
     <>
       <div className="my-10 lg:my-12">
@@ -15,7 +26,7 @@ const BlogGallery = () => {
           {/* item1 section start */}
           <div>
             {/* left item1 section start */}
-            <div className='h-44 sm:h-40 md:h-40 lg:h-48 xl:h-52 w-full relative'>
+            <div className='h-44 sm:h-40 md:h-40 lg:h-48 xl:h-52 w-full relative' data-aos="flip-left" data-aos-duration="1000">
               <img src={success} alt="this is success section" className='h-full w-full'></img>
               <div className="absolute top-0 bottom-0 right-0 left-0 bg-black bg-opacity-55 flex items-end p-3">
                 <ul>
@@ -26,7 +37,7 @@ const BlogGallery = () => {
             </div>
             {/* left item1 section end */}
             {/* left item2 section start */}
-            <div className='h-44 sm:h-40 md:h-40 lg:h-48 xl:h-52 w-full relative mt-3'>
+            <div className='h-44 sm:h-40 md:h-40 lg:h-48 xl:h-52 w-full relative mt-3' data-aos="flip-left" data-aos-duration="1000">
               <img src={delivery} alt="this is delivery section" className='h-full w-full'></img>
               <div className="absolute top-0 bottom-0 right-0 left-0 bg-black bg-opacity-55 flex items-end p-3">
               <ul>
@@ -41,7 +52,7 @@ const BlogGallery = () => {
           {/* item2 section start */}
           <div className='sm:hidden md:block'>
             {/* middle item section start */}
-            <div className='h-44 md:h-full lg:h-full xl:h-full w-full relative'>
+            <div className='h-44 md:h-full lg:h-full xl:h-full w-full relative' data-aos="zoom-in" data-aos-duration="1000">
               <img src={award} alt="this is award section" className='h-full w-full'></img>
               <div className="absolute top-0 bottom-0 right-0 left-0 bg-black bg-opacity-55 flex items-end p-3">
               <ul>
@@ -56,7 +67,7 @@ const BlogGallery = () => {
           {/* item3 section start */}
           <div>
             {/* right item1 section start */}
-            <div className='h-44 sm:h-40 md:h-40 lg:h-48 xl:h-52 relative w-full'>
+            <div className='h-44 sm:h-40 md:h-40 lg:h-48 xl:h-52 relative w-full' data-aos="flip-right" data-aos-duration="1000">
               <img src={industry} alt="this is industry section" className='h-full w-full'></img>
               <div className="absolute top-0 bottom-0 right-0 left-0 bg-black bg-opacity-55 flex items-end p-3">
               <ul>
@@ -67,7 +78,7 @@ const BlogGallery = () => {
             </div>
             {/* right item1 section end */}
             {/* right item2 section start */}
-            <div className='h-44 sm:h-40 md:h-40 lg:h-48 xl:h-52 w-full relative mt-3'>
+            <div className='h-44 sm:h-40 md:h-40 lg:h-48 xl:h-52 w-full relative mt-3' data-aos="flip-right" data-aos-duration="1000">
               <img src={working} alt="this is success section" className='h-full w-full'></img>
               <div className="absolute top-0 bottom-0 right-0 left-0 bg-black bg-opacity-55 flex items-end p-3">
               <ul>

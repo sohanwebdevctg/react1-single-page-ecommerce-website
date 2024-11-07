@@ -5,8 +5,19 @@ import wemen from '/public/blog/wemen.jpg'
 
 import { FaLinkedin, FaLocationPin, FaSquareFacebook, FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+
 
 const BlogPost = () => {
+
+  
+  //aos
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
     <>
       <div className="my-10 lg:my-12">
@@ -16,7 +27,7 @@ const BlogPost = () => {
           {/* left section start */}
           <div className="w-full md:w-[65%] grid grid-cols-1 gap-5">
             {/* item1 section start */}
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="1200">
               <img src={couple} alt="this is our best room" className="w-full h-44 sm:h-48 md:h-48 lg:h-56 xl:h-80"></img>
               <div className="p-5 bg-[#F5F5F5]">
                 <h1 className="text-sm sm:text-sm md:text-xs lg:text-base xl:text-lg font-bold">Best for couple</h1>
@@ -25,7 +36,7 @@ const BlogPost = () => {
             </div>
             {/* item1 section end */}
             {/* item2 section start */}
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="1200">
               <img src={bestCollection} alt="this is our best room" className="w-full h-44 sm:h-48 md:h-48 lg:h-56 xl:h-80"></img>
               <div className="p-5 bg-[#F5F5F5]">
                 <h1 className="text-sm sm:text-sm md:text-xs lg:text-base xl:text-lg font-bold">Best Collection</h1>
@@ -40,7 +51,7 @@ const BlogPost = () => {
           {/* item1 section start */}
           <div className="grid grid-cols-1 gap-2">
             {/* item1 section start */}
-            <div className="space-y-2">
+            <div className="space-y-2" data-aos="zoom-in" data-aos-duration="1000">
               <button className="w-full bg-[#F5F5F5] py-2 text-sm sm:text-sm md:text-xs lg:text-sm xl:text-base font-bold">
                 Today Blogs
               </button>
@@ -49,7 +60,7 @@ const BlogPost = () => {
             </div>
             {/* item1 section end */}
             {/* item2 section start */}
-            <div className="space-y-2">
+            <div className="space-y-2" data-aos="zoom-in" data-aos-duration="1000">
               <button className="w-full bg-[#F5F5F5] py-2 text-sm sm:text-sm md:text-xs lg:text-sm xl:text-base font-bold">
                 Tomorrow Blogs
               </button>

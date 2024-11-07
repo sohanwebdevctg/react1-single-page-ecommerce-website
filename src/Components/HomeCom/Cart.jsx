@@ -1,13 +1,23 @@
 import { Link } from "react-router-dom";
 import { FaHeart, FaStar } from 'react-icons/fa';
 import { AiFillPlusCircle } from 'react-icons/ai';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 
 
 const Cart = ({item}) => {
 
+  
+  //aos
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
-    <div className="px-1 py-3">
+    <div className="px-1 py-3" data-aos="flip-left"
+    data-aos-duration="1500">
             {/* item start */}
             <div>
             {/* image section start */}

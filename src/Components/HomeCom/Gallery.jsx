@@ -1,10 +1,20 @@
+import { useEffect } from 'react';
 import img1 from '/public/home/img1.jpg';
 import img2 from '/public/home/img2.jpg';
 import img3 from '/public/home/img3.jpeg';
 import img4 from '/public/home/img4.jpg';
 import img5 from '/public/home/img5.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Gallery = () => {
+
+
+  //aos
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
     <>
       <div className="my-10 xl:my-12 px-3">
@@ -18,7 +28,7 @@ const Gallery = () => {
         {/* item start */}
           {/* top section start */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-3 mg:gap-4 lg:gap-5 xl:gap-6">
-              <div className='w-full relative'>
+              <div className='w-full relative' data-aos="flip-left" data-aos-duration="1500">
                 {/* img start */}
                 <img src={img1} className='w-full h-48 md:h-52 lg:h-64 xl:h-72 2xl:h-80'></img>
                 {/* img end */}
@@ -33,7 +43,7 @@ const Gallery = () => {
                 </div>
                 {/* details end */}
               </div>
-              <div className='w-full relative'>
+              <div className='w-full relative' data-aos="flip-right" data-aos-duration="1500">
                 {/* img start */}
                 <img src={img2} className='w-full h-48 md:h-52 lg:h-64 xl:h-72 2xl:h-80'></img>
                 {/* img end */}
@@ -53,7 +63,7 @@ const Gallery = () => {
           {/* bottom section start */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-3 mg:gap-4 lg:gap-5 xl:gap-6 mt-5">
             {/* item start */}
-              <div className='w-full relative'>
+              <div className='w-full relative' data-aos="zoom-in" data-aos-duration="1000">
                 {/* img start */}
                 <img src={img3} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
                 {/* img end */}
@@ -68,7 +78,7 @@ const Gallery = () => {
               </div>
               {/* item end */}
             {/* item start */}
-              <div className='w-full relative'>
+              <div className='w-full relative' data-aos="zoom-in" data-aos-duration="1000">
                 {/* img start */}
                 <img src={img4} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
                 {/* img end */}
@@ -83,7 +93,7 @@ const Gallery = () => {
               </div>
               {/* item end */}
             {/* item start */}
-              <div className='w-full relative'>
+              <div className='w-full relative' data-aos="zoom-in" data-aos-duration="1000">
                 {/* img start */}
                 <img src={img5} className='w-full h-44 md:h-52 lg:h-56 xl:h-60 2xl:h-64'></img>
                 {/* img end */}

@@ -1,4 +1,7 @@
 import { FaStar } from "react-icons/fa6";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 
 const recentlyData = [
@@ -10,6 +13,13 @@ const recentlyData = [
 
 
 const RecentView = () => {
+
+  
+  //aos
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
     <>
       <div className="my-8 xl:my-12 ">
@@ -24,7 +34,7 @@ const RecentView = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-4 md:gap-2 lg:gap-3 xl:gap-4 2xl:gap-5">
         {/* item section start */}
         {
-          recentlyData.map((data, id) => <div key={data.id} className="overflow-hidden rounded-lg shadow-lg shadow-slate-300 mainCon group relative">
+          recentlyData.map((data, id) => <div key={data.id} className="overflow-hidden rounded-lg shadow-lg shadow-slate-300 mainCon group relative" data-aos="zoom-in" data-aos-duration="1500">
           <img src={data.img} width={300} height={300} alt={`this is view ${data.id}`} className="w-full h-40 sm:h-36 md:h-32 lg:h-40 xl:h-44 2xl:h-48 group-hover:scale-110 duration-500 ease-in"></img>
           {/* details section start */}
           <div className="bg-black bg-opacity-55 py-1 px-2 absolute bottom-0 right-0 left-0">

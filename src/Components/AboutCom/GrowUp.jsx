@@ -2,8 +2,18 @@ import { FaArrowRight } from "react-icons/fa";
 import fashion1 from '/public/about/fashion1.jpg';
 import fashion from '/public/about/fashion.jpeg';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
+
 
 const GrowUp = () => {
+
+  //aos
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
     <>
       <div className='my-10 lg:my-16'>
@@ -13,8 +23,8 @@ const GrowUp = () => {
         <div className='sm:flex sm:justify-between sm:items-center gap-5'>
           {/* left section start */}
           <div className='flex-1 relative'>
-            <img src={fashion1} alt="working image" className="w-4/5 sm:w-4/5 md:w-4/5 lg:w-3/4 xl:w-2/3 h-80 sm:h-80 md:h-80 lg:h-96 xl:h-96 p-3 xl:p-5 bg-[#F5F5F5] shadow-lg"></img>
-            <img src={fashion} alt="working image" className="w-40 h-44 sm:w-32 sm:h-36 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-52 xl:h-52 absolute top-20 right-[3%] sm:top-28 sm:right-[5%] md:top-20 md:right-[5%] lg:top-[25%] lg:right-[8%] xl:top-[25%] xl:right-[20%] rounded-md shadow-lg"></img>
+            <img src={fashion1} alt="working image" className="w-4/5 sm:w-4/5 md:w-4/5 lg:w-3/4 xl:w-2/3 h-80 sm:h-80 md:h-80 lg:h-96 xl:h-96 p-3 xl:p-5 bg-[#F5F5F5] shadow-lg" data-aos="zoom-in" data-aos-duration="1000"></img>
+            <img src={fashion} alt="working image" className="w-40 h-44 sm:w-32 sm:h-36 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-52 xl:h-52 absolute top-20 right-[3%] sm:top-28 sm:right-[5%] md:top-20 md:right-[5%] lg:top-[25%] lg:right-[8%] xl:top-[25%] xl:right-[20%] rounded-md shadow-lg" data-aos="flip-left" data-aos-duration="1000"></img>
           </div>
           {/* left section end */}
           {/* right section start */}
